@@ -84,7 +84,7 @@ The Software Contract and Hardware Contract expiration dates appear on the line 
 
 . If the contract is close to the expiration date, or has expired, you can click the chat icon in the lower-right of Cloud Manager to request an extension to the contract.
 
-. For clusters that you want to know additional details, click image:button_down_caret.png[down-caret] to expand the cluster information.
+. For clusters that you want to know additional details, click image:button_down_caret.png[A down-caret icon] to expand the cluster information.
 +
 image:screenshot_digital_wallet_license_info.png[A screenshot of expanding the cluster details so you can view the cluster license information.]
 
