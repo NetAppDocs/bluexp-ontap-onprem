@@ -24,11 +24,11 @@ A Cloud Manager feature called "templates" enables you to create volumes that ar
 
 . On the Canvas page, double-click the name of the on-prem ONTAP cluster on which you want to provision volumes.
 
-. Click *Add New Volume*.
+. Click *Volumes > Add Volume*.
 
 . Follow the steps in the wizard to create the volume.
 
-.. *Details & Protection*: Enter basic details about the volume and then select a Snapshot policy.
+.. *Details, Protection, & Tags*: Enter details about the volume like its name and size, choose a Snapshot policy, and specify volume tags, if desired.
 +
 Some of the fields on this page are self-explanatory. The following list describes fields for which you might need guidance:
 +
@@ -43,7 +43,7 @@ Some of the fields on this page are self-explanatory. The following list describ
 
 |===
 
-.. *Protocol*: Choose the protocol for the volume (NFS or CIFS) and then set the access control or permissions for the volume.
+.. *Protocol*: Choose the protocol for the volume (NFS, CIFS, or iSCSI) and then set the access control or permissions for the volume.
 +
 If you choose CIFS and a server isn't set up yet, then Cloud Manager prompts you to set up a CIFS server using either Active Directory or a workgroup.
 +
