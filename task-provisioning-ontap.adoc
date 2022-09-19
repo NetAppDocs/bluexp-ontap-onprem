@@ -24,11 +24,11 @@ A Cloud Manager feature called "templates" enables you to create volumes that ar
 
 . On the Canvas page, double-click the name of the on-prem ONTAP cluster on which you want to provision volumes.
 
-. Click *Add New Volume*.
+. Click *Volumes > Add Volume*.
 
 . Follow the steps in the wizard to create the volume.
 
-.. *Details & Protection*: Enter basic details about the volume and then select a Snapshot policy.
+.. *Details, Protection, & Tags*: Enter details about the volume like its name and size, choose a Snapshot policy, and specify volume tags, if desired.
 +
 Some of the fields on this page are self-explanatory. The following list describes fields for which you might need guidance:
 +
@@ -43,7 +43,7 @@ Some of the fields on this page are self-explanatory. The following list describ
 
 |===
 
-.. *Protocol*: Choose the protocol for the volume (NFS or CIFS) and then set the access control or permissions for the volume.
+.. *Protocol*: Choose the protocol for the volume (NFS, CIFS, or iSCSI) and then set the access control or permissions for the volume.
 +
 If you choose CIFS and a server isn't set up yet, then Cloud Manager prompts you to set up a CIFS server using either Active Directory or a workgroup.
 +
@@ -122,22 +122,22 @@ If you provisioned a CIFS share, give users or groups permissions to the files a
 
 You can replicate data between Cloud Volumes ONTAP systems and ONTAP clusters by choosing a one-time data replication, which can help you move data to and from the cloud, or a recurring schedule, which can help with disaster recovery or long-term retention.
 
-https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html[Click here for more details^].
+https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html[Learn how to replicate data^]
 
 == Backing up data
 
 You can back up data from your on-premises ONTAP system to low-cost object storage in the cloud by using Cloud Backup. This service provides backup and restore capabilities for protection and long-term archive of your on-prem and cloud data.
 
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html[Click here for more details^].
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html[Learn how to back up data to the cloud^]
 
 == Scan, map, and classify your data
 
 Cloud Data Sense can scan your corporate on-premises clusters to map and classify data, and to identify private information. This can help reduce your security and compliance risk, decrease storage costs, and assist with your data migration projects.
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html[Click here for more details^].
+https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html[Learn how to scan, map, and classify your data^]
 
 == Tiering data to the cloud
 
 Extend your data center to the cloud by automatically tiering inactive data from ONTAP clusters to object storage using Cloud Tiering.
 
-https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html[Click here for more details^].
+https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html[Learn how to tier data to the cloud^]

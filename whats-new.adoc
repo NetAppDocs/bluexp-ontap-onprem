@@ -16,6 +16,24 @@ summary: Learn what's new with on-prem ONTAP clusters.
 Learn what's new with on-prem ONTAP clusters.
 
 // tag::whats-new[]
+== 18 September 2022
+
+The following changes were introduced with the 3.9.22 release of the Connector.
+
+=== New Overview page
+
+We've introduced a new Overview page to provide key details about an on-premises ONTAP cluster. For example, you can now view details like storage efficiency, capacity distribution, and system information.
+
+You can also view details about integration with other NetApp cloud services that enable data tiering, data replication, and backups.
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-overview.png[A screenshot that shows the Overview page for an on-prem ONTAP cluster.]
+
+=== Redesigned Volumes page
+
+We redesigned the Volumes page to provide a summary of the volumes on a cluster. The summary shows you the total number of volumes, the amount of provisioned capacity, used and reserved capacity, and the amount of tiered data.
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-volumes.png[A screenshot that shows the Volumes page for an on-prem ONTAP cluster.]
+
 == 7 June 2022
 
 The following change was introduced with the 3.9.19 release of the Connector.
@@ -26,7 +44,7 @@ If you need to perform advanced management of an ONTAP on-premises cluster, you 
 
 This Advanced View is available as a Preview with on-premises ONTAP clusters running 9.10.0 or later. We plan to refine this experience and add enhancements in upcoming releases. Please send us feedback by using the in-product chat.
 
-link:task-administer-advanced-view.html[Learn more about the Advanced View].
+https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-administer-advanced-view.html[Learn more about the Advanced View].
 
 == 27 February 2022
 
@@ -35,13 +53,13 @@ link:task-administer-advanced-view.html[Learn more about the Advanced View].
 Now you can view an inventory of your on-prem ONTAP clusters along with their hardware and service contracts expiration dates. Additional details about the clusters are also available.
 
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html#viewing-cluster-information-and-contract-details[See how to view this important on-prem cluster information]. You'll need to have a NetApp Support Site account (NSS) for the clusters, and the NSS credentials will need to be attached to your Cloud Manager account.
+// end::whats-new[]
 
 == 11 January 2022
 
 === Tags that you add to volumes on on-prem ONTAP clusters can be use with the Tagging service.
 
 Tags that you add to a volume are now associated with the  tagging feature of the Application Templates service, which can help you organize and simplify the management of your resources.
-// end::whats-new[]
 
 == 28 November 2021
 
