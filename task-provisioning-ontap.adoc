@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-provisioning-ontap.html
 keywords: ontap, cluster, manage, provision, provisioning, volumes, discovering, fas, aff, creating volumes, adding volumes
-summary: After you discover your on-prem ONTAP cluster from Cloud Manager, you can open the working environment to provision and manage storage.
+summary: After you discover your on-prem ONTAP cluster from BlueXP, you can open the working environment to provision and manage storage.
 ---
 
 = Managing storage for on-prem ONTAP clusters
@@ -12,15 +12,17 @@ summary: After you discover your on-prem ONTAP cluster from Cloud Manager, you c
 :linkattrs:
 :imagesdir: ./media/
 
-After you discover your on-prem ONTAP cluster from Cloud Manager, you can open the working environment to provision and manage storage.
+After you discover your on-prem ONTAP cluster from BlueXP, you can open the working environment to provision and manage storage.
 
 == Creating volumes
 
-Cloud Manager enables you to create NFS or CIFS volumes on existing aggregates. You can't create new aggregates on an on-prem ONTAP cluster from Cloud Manager.
+BlueXP enables you to create NFS or CIFS volumes on existing aggregates. You can't create new aggregates on an on-prem ONTAP cluster from BlueXP.
 
-A Cloud Manager feature called "templates" enables you to create volumes that are optimized for the workload requirements for certain applications; such as databases or streaming services. If your organization has created volume templates that you should use, follow <<Creating volumes from templates,these steps>>.
+A BlueXP feature called "templates" enables you to create volumes that are optimized for the workload requirements for certain applications; such as databases or streaming services. If your organization has created volume templates that you should use, follow <<Creating volumes from templates,these steps>>.
 
 .Steps
+
+. From the navigation menu, select *Storage > Canvas*.
 
 . On the Canvas page, double-click the name of the on-prem ONTAP cluster on which you want to provision volumes.
 
@@ -45,7 +47,7 @@ Some of the fields on this page are self-explanatory. The following list describ
 
 .. *Protocol*: Choose the protocol for the volume (NFS, CIFS, or iSCSI) and then set the access control or permissions for the volume.
 +
-If you choose CIFS and a server isn't set up yet, then Cloud Manager prompts you to set up a CIFS server using either Active Directory or a workgroup.
+If you choose CIFS and a server isn't set up yet, then BlueXP prompts you to set up a CIFS server using either Active Directory or a workgroup.
 +
 The following list describes fields for which you might need guidance:
 +
@@ -54,7 +56,7 @@ The following list describes fields for which you might need guidance:
 | Field
 | Description
 
-| Access Control | An NFS export policy defines the clients in the subnet that can access the volume. By default, Cloud Manager enters a value that provides access to all instances in the subnet.
+| Access Control | An NFS export policy defines the clients in the subnet that can access the volume. By default, BlueXP enters a value that provides access to all instances in the subnet.
 
 | Permissions and Users/Groups | These fields enable you to control the level of access to an SMB share for users and groups (also called access control lists or ACLs). You can specify local or domain Windows users or groups, or UNIX users or groups. If you specify a domain Windows user name, you must include the user's domain using the format domain\username.
 
@@ -106,7 +108,7 @@ image:screenshot_define_ontap_vol_from_template.png[A screenshot showing a blank
 
 .Result
 
-Cloud Manager provisions the volume and displays a page so that you can see the progress.
+BlueXP provisions the volume and displays a page so that you can see the progress.
 
 image:screenshot_template_creating_resource_ontap.png[A screenshot showing the progress of creating your new volume from the template.]
 

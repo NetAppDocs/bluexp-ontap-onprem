@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-administer-advanced-view.html
 keywords: system manager, advanced view, access system manager, load system manager, use system manager
-summary: If you need to perform advanced management of an ONTAP on-premises cluster, you can do so using ONTAP System Manager, which is a management interface that's provided with an ONTAP system. We have included the System Manager interface directly inside Cloud Manager so that you don't need to leave Cloud Manager for advanced management.
+summary: If you need to perform advanced management of an ONTAP on-premises cluster, you can do so using ONTAP System Manager, which is a management interface that's provided with an ONTAP system. We have included the System Manager interface directly inside BlueXP so that you don't need to leave BlueXP for advanced management.
 ---
 
 = Administer ONTAP using the Advanced View
@@ -13,13 +13,13 @@ summary: If you need to perform advanced management of an ONTAP on-premises clus
 :imagesdir: ./media/
 
 [.lead]
-If you need to perform advanced management of an ONTAP on-premises cluster, you can do so using ONTAP System Manager, which is a management interface that's provided with an ONTAP system. We have included the System Manager interface directly inside Cloud Manager so that you don't need to leave Cloud Manager for advanced management.
+If you need to perform advanced management of an ONTAP on-premises cluster, you can do so using ONTAP System Manager, which is a management interface that's provided with an ONTAP system. We have included the System Manager interface directly inside BlueXP so that you don't need to leave BlueXP for advanced management.
 
 This Advanced View is available as a Preview. We plan to refine this experience and add enhancements in upcoming releases. Please send us feedback by using the in-product chat.
 
 == Features
 
-The Advanced View in Cloud Manager gives you access to additional management features:
+The Advanced View in BlueXP gives you access to additional management features:
 
 * Advanced storage management
 +
@@ -49,11 +49,11 @@ System Manager integration is not supported in GovCloud regions or in regions th
 
 == Limitations
 
-A few System Manager features are not supported with on-premises ONTAP clusters when using the Advanced View in Cloud Manager:
+A few System Manager features are not supported with on-premises ONTAP clusters when using the Advanced View in BlueXP:
 
 * Cluster setup
 +
-After you set the management IP address and configure the admin password on an on-prem ONTAP cluster, you can discover the cluster in Cloud Manager and then continue cluster setup from the Advanced View.
+After you set the management IP address and configure the admin password on an on-prem ONTAP cluster, you can discover the cluster in BlueXP and then continue cluster setup from the Advanced View.
 
 * Cloud Backup activation
 +
@@ -83,7 +83,7 @@ image:screenshot-advanced-view.png[A screenshot of an on-prem ONTAP working envi
 
 . Use System Manager to manage ONTAP.
 
-. If needed, click *Switch to Standard View* to return to standard management through Cloud Manager.
+. If needed, click *Switch to Standard View* to return to standard management through BlueXP.
 +
 image:screenshot-standard-view.png[A screenshot of an on-prem ONTAP working environment that shows the Switch to Standard View option.]
 
