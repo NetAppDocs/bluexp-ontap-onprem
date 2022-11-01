@@ -13,7 +13,7 @@ summary: Learn what's new with on-prem ONTAP clusters.
 :imagesdir: ./media/
 
 [.lead]
-Learn what's new with on-prem ONTAP clusters.
+Learn what's new with on-prem ONTAP cluster management in BlueXP (formerly Cloud Manager).
 
 // tag::whats-new[]
 == 18 September 2022
