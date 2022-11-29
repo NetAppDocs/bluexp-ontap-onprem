@@ -67,15 +67,7 @@ The following list describes fields for which you might need guidance:
 
 |===
 
-.. *Usage Profile*: Choose whether to enable or disable storage efficiency features on the volume.
-+
-ONTAP includes several storage efficiency features that can reduce the total amount of storage that you need. NetApp storage efficiency features provide the following benefits:
-+
-Thin provisioning:: Presents more logical storage to hosts or users than you actually have in your physical storage pool. Instead of preallocating storage space, storage space is allocated dynamically to each volume as data is written.
-
-Deduplication:: Improves efficiency by locating identical blocks of data and replacing them with references to a single shared block. This technique reduces storage capacity requirements by eliminating redundant blocks of data that reside in the same volume.
-
-Compression:: Reduces the physical capacity required to store data by compressing data within a volume on primary, secondary, and archive storage.
+.. *Usage Profile*: Choose whether to enable or disable storage efficiency features on the volume in order to reduce the total amount of storage that you need.
 
 .. *Review*: Review details about the volume and then click *Add*.
 
@@ -201,7 +193,7 @@ image:screenshot-advanced-view.png[A screenshot of an on-prem ONTAP working envi
 +
 image:screenshot-standard-view.png[A screenshot of an on-prem ONTAP working environment that shows the Switch to Standard View option.]
 
-=== Get help with using System Manager
+=== Get help with System Manager
 
 If you need help using System Manager with ONTAP, you can refer to https://docs.netapp.com/us-en/ontap/index.html[ONTAP documentation^] for step-by-step instructions. Here are a few links that might help:
 

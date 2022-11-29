@@ -20,7 +20,7 @@ Discover on-prem ONTAP clusters from BlueXP so that you can start managing volum
 BlueXP provides two ways to discover and manage your clusters:
 
 * Direct discovery for management through System Manager
-
++
 This is the same discovery option described in the previous section where you follow the redirect.
 
 * Discovery through a Connector (software installed in your environment) for management through System Manager and the ability to enable BlueXP data services.
@@ -59,7 +59,7 @@ You can discover your ONTAP clusters and add them as a working environment from 
 
 . Select *Local On-Premises ONTAP (Direct)*.
 
-. On the _On-Premises ONTAP (Direct) Details_ page, enter the cluster management IP address, the password for the admin user account, and click *Add*.
+. Enter the cluster management IP address, the password for the admin user account, and click *Add*.
 
 .Result
 
