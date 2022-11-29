@@ -12,6 +12,7 @@ summary: After you discover your on-prem ONTAP cluster from BlueXP, you can open
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
 After you discover your on-prem ONTAP cluster from BlueXP, you can open the working environment to provision and manage storage.
 
 == Creating volumes
