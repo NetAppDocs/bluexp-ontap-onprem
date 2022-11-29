@@ -1,0 +1,41 @@
+---
+sidebar: sidebar
+permalink: task-manage-ontap-direct.html
+keywords: system manager, advanced view, access system manager, load system manager, use system manager
+summary: If you need to perform advanced management of an ONTAP on-premises cluster, you can do so using ONTAP System Manager, which is a management interface that's provided with an ONTAP system. We have included the System Manager interface directly inside BlueXP so that you don't need to leave BlueXP for advanced management.
+---
+
+= Manage on-prem ONTAP clusters that were discovered directly
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+If you discovered your on-prem ONTAP cluster directly without using a Connector, you can enter the working environment to manage the cluster by using System Manager.
+
+.Limitations
+
+The following System Manager features aren't available:
+
+* Global search
+* Digital Advisor (formerly Active IQ) integration, which includes risks and remediation information, capacity usage history, firmware availability notifications, and the ability to view open support cases
+* User interface settings
+* Cloud widget
+* Manual upgrades of ONTAP and firmware
+* Cloud Backup integration
+
+.Steps
+
+. On the Canvas page, double-click the name of an on-premises ONTAP working environment.
+
+. Use System Manager to manage ONTAP.
+
+.Get help with System Manager
+
+If you need help using System Manager with ONTAP, you can refer to https://docs.netapp.com/us-en/ontap/index.html[ONTAP documentation^] for step-by-step instructions. Here are a few links that might help:
+
+* https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html[Volume and LUN management^]
+* https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html[Network management^]
+* https://docs.netapp.com/us-en/ontap/concept_dp_overview.html[Data protection^]

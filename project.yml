@@ -1,5 +1,5 @@
 settings:
-  name: On-prem ONTAP clusters
+  name: On-premises ONTAP clusters
   platform: cloud
   internal:
     pdf_enabled: true
@@ -8,20 +8,22 @@ settings:
   rss_page: "whats-new.html"
 sidebar:
   entries:
-    - title: On-prem ONTAP cluster docs
+    - title: On-premises ONTAP cluster docs
       url: /index.html
     - title: Release notes
       url: /whats-new.html
     - title: Get started
       entries:
+        - title: Learn about on-prem ONTAP cluster management
+          url: /concept-onprem-ontap.html
         - title: Discover ONTAP clusters
           url: /task-discovering-ontap.html
     - title: Manage on-prem ONTAP clusters
       entries:
-        - title: Manage on-prem ONTAP volumes
-          url: /task-provisioning-ontap.html
-        - title: Administer using System Manager
-          url: /task-administer-advanced-view.html
+        - title: Manage clusters discovered directly
+          url: /task-manage-ontap-direct.html
+        - title: Manage clusters discovered with a Connector
+          url : /task-manage-ontap-connector.html
         - title: Optimize clusters using Digital Advisor
           url: /concept-aiq-digital-advisor.html
         - title: Remove an on-prem ONTAP working environment
@@ -46,7 +48,7 @@ homepage:
           url: task-discovering-ontap.html#viewing-discovered-and-undiscovered-on-prem-clusters
         - title: Discover ONTAP clusters
           url: task-discovering-ontap.html
-        - title: What’s New
+        - title: What's New
           url: whats-new.html
     - title: Manage on-prem ONTAP clusters
       links:

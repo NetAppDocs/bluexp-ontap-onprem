@@ -16,6 +16,18 @@ summary: Learn what's new with on-prem ONTAP clusters.
 Learn what's new with on-prem ONTAP cluster management in BlueXP (formerly Cloud Manager).
 
 // tag::whats-new[]
+== 4 December 2022
+
+The following changes were introduced with the 3.9.24 release of the Connector.
+
+=== Manage locally
+
+blurb
+
+=== FlexGroup volumes
+
+blurb
+
 == 18 September 2022
 
 The following changes were introduced with the 3.9.22 release of the Connector.
