@@ -13,67 +13,40 @@ summary: BlueXP can discover the ONTAP clusters in your on-premises environment,
 :imagesdir: ./media/
 
 [.lead]
-Discover on-prem ONTAP clusters from BlueXP so that you can start managing volumes and performing advanced management using ONTAP System Manager.
+Discover on-prem ONTAP clusters from BlueXP so that you can start managing volumes and performing advanced management using ONTAP System Manager, which is available from BlueXP so that you don't need to leave BlueXP for advanced management.
 
 == Discovery and management options
 
-BlueXP provides two ways to discover and manage your clusters:
+BlueXP provides two ways to discover and manage your on-prem ONTAP clusters:
 
-* Direct discovery for management through System Manager
+Discovery through a Connector:: 
+This option enables you to manage the cluster using the following features:
+
+* The Standard view, which provides basic volume operations
+* The Advanced view, which provides management through System Manager
+* Integration with BlueXP data services, which provide data replication, backup and recovery, data classification, and data tiering
+
 +
-This is the same discovery option described in the previous section where you follow the redirect.
+A Connector must be installed in a cloud provider or on your premises.
 
-* Discovery through a Connector (software installed in your environment) for management through System Manager and the ability to enable BlueXP data services.
+Direct discovery::
+This option enables you to manage the cluster using System Manager. No other management options are available.
 +
-BlueXP data services provide features such as data replication, backup and recovery, data classification, and data tiering.
+This option doesn't require a Connector.
 
-Once discovered, your clusters are available as a working environment in BlueXP so that you can manage the clusters.
+Once discovered, your clusters are available as a working environment on the BlueXP Canvas.
 
-== Discover on-prem ONTAP clusters directly
+== Discover clusters using a Connector
 
-Directly discover your on-premises ONTAP clusters from BlueXP in order to manage the clusters using System Manager.
+Discover your on-prem ONTAP clusters with a Connector to take advantage of all management capabilities that BlueXP has to offer.
 
-TIP: When you access System Manager on an on-premises ONTAP cluster running 9.12.1 or later with connectivity to the BlueXP service, you'll be prompted to manage the cluster directly from BlueXP. If you follow this prompt, it discovers the cluster in BlueXP just like described in this section.
+.Requirements
 
-=== Requirements
-
-* The on-premises ONTAP cluster must be running 9.12.1 or later with connectivity to the BlueXP service (\https://bluexp.netapp.com).
-
-* You need the cluster management IP address and the password for the admin user account.
+* You should have gotten started with BlueXP, which includes logging in and setting up an account.
 +
-BlueXP discovers ONTAP clusters using HTTPS. If you use custom firewall policies, the ONTAP cluster must allow inbound HTTPS access through port 443.
-+
-The default "mgmt" firewall policy allows inbound HTTPS access from all IP addresses. If you modified this default policy, or if you created your own firewall policy, you must associate the HTTPS protocol with that policy and enable access from the Connector host.
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-overview.html[Learn how to get started with BlueXP^]
 
-* You need a valid set of NetApp Support Site credentials.
-+
-Learn how to https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html[add the NSS account to BlueXP^].
-
-=== Discover clusters from the Canvas page
-
-You can discover your ONTAP clusters and add them as a working environment from the Canvas page.
-
-.Steps
-
-. On the Canvas page, click *Add Working Environment* and select *On-Premises*.
-
-. Select *Local On-Premises ONTAP (Direct)*.
-
-. Enter the cluster management IP address, the password for the admin user account, and click *Add*.
-
-.Result
-
-BlueXP discovers the cluster and adds it to a working environment in the Canvas.
-
-You can now enter the working environment to manage the cluster using System Manager.
-
-== Discover on-prem ONTAP clusters using a Connector
-
-Using a Connector to discover your on-prem ONTAP clusters enables the Standard view in the working environment and gives you the option to enable BlueXP data services like Cloud Backup, Data Sense, and more.
-
-=== Requirements
-
-* A Connector installed in a cloud provider or on your premises.
+* A Connector must be installed in a cloud provider or on your premises.
 +
 If you want to tier cold data to the cloud, then you should review requirements for the Connector based on where you plan to tier cold data.
 +
@@ -81,7 +54,7 @@ If you want to tier cold data to the cloud, then you should review requirements 
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html[Switching between Connectors^]
 ** https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html[Learn about Cloud Tiering^]
 
-* The cluster management IP address and the password for the admin user account to add the cluster to BlueXP.
+* You need the cluster management IP address and the password for the admin user account to add the cluster to BlueXP.
 +
 BlueXP discovers ONTAP clusters using HTTPS. If you use custom firewall policies, they must meet the following requirements:
 
@@ -93,13 +66,13 @@ If the Connector is in the cloud, all outbound communication is allowed by the p
 +
 The default "mgmt" firewall policy allows inbound HTTPS access from all IP addresses. If you modified this default policy, or if you created your own firewall policy, you must associate the HTTPS protocol with that policy and enable access from the Connector host.
 
-* A valid set of NetApp Support Site credentials. See how to https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html[add the NSS account to BlueXP^].
-
-=== Discover clusters from the Canvas page
-
-You can discover your ONTAP clusters and add them as a working environment from the Canvas page.
+* You need a valid set of NetApp Support Site credentials. 
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html[Learn how to add an NSS account to BlueXP^].
 
 .Steps
+
+. From the navigation menu, select *Storage > Canvas*.
 
 . On the Canvas page, click *Add Working Environment* and select *On-Premises*.
 
@@ -107,7 +80,7 @@ You can discover your ONTAP clusters and add them as a working environment from 
 
 . If you're prompted, create a Connector.
 +
-Refer to the links above for more details.
+Refer to the requirements above for more details.
 
 . On the _ONTAP Cluster Details_ page, enter the cluster management IP address, the password for the admin user account, and click *Add*.
 +
@@ -119,4 +92,40 @@ image:screenshot_discover_ontap.png[A screenshot that shows an example of the ON
 
 BlueXP discovers the cluster and adds it to a working environment in the Canvas.
 
-You can enable services for this cluster in the right panel to replicate data to and from the cluster, set up data tiering to the cloud, back up volumes to the cloud, or run compliance scans on the volumes. You can also create new volumes or launch System Manager to perform advanced tasks.
+link:task-manage-ontap-connector.html[Learn how to manage the clusters].
+
+== Discover clusters directly
+
+Directly discover your on-premises ONTAP clusters from BlueXP in order to manage the clusters using System Manager.
+
+TIP: When you access System Manager on an on-premises ONTAP cluster running 9.12.1 or later with connectivity to the BlueXP service, you'll be prompted to manage the cluster directly from BlueXP. If you follow this prompt, it discovers the cluster in BlueXP just like described in this section.
+
+.Requirements
+
+* You should have gotten started with BlueXP, which includes logging in and setting up an account.
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-overview.html[Learn how to get started with BlueXP^]
+
+* The on-premises ONTAP cluster must be running 9.12.1 or later with connectivity to the BlueXP service (\https://bluexp.netapp.com).
+
+* You need the cluster management IP address and the password for the admin user account.
++
+BlueXP discovers ONTAP clusters using HTTPS. If you use custom firewall policies, the ONTAP cluster must allow inbound HTTPS access through port 443.
++
+The default "mgmt" firewall policy allows inbound HTTPS access from all IP addresses. If you modified this default policy, or if you created your own firewall policy, you must associate the HTTPS protocol with that policy and enable access from the Connector host.
+
+.Steps
+
+. From the navigation menu, select *Storage > Canvas*.
+
+. On the Canvas page, click *Add Working Environment* and select *On-Premises*.
+
+. Select *Local On-Premises ONTAP (Direct)*.
+
+. Enter the cluster management IP address, the password for the admin user account, and click *Add*.
+
+.Result
+
+BlueXP discovers the cluster and adds it to a working environment in the Canvas.
+
+link:task-manage-ontap-direct.html[Learn how to manage the clusters].

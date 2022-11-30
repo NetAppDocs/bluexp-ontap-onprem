@@ -20,7 +20,7 @@ BlueXP can discover the ONTAP clusters running on AFF/FAS controllers and ONTAP 
 * Manage NFS and CIFS volumes
 * Perform advanced management using ONTAP System Manager
 * Get health and performance observability with BlueXP analysis and control
-* Use BlueXP's integrated data services to replicate, back up, scan, classify, and tier data
+* Use BlueXP's data services to replicate, back up, scan, classify, and tier data
 * View hardware and software contract status information in the Digital Wallet
 
 == Cost

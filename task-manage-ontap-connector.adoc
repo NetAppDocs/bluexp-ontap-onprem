@@ -13,17 +13,17 @@ summary: If you need to perform advanced management of an ONTAP on-premises clus
 :imagesdir: ./media/
 
 [.lead]
-An intro
+If you discovered an on-prem ONTAP cluster using a Connector, you can create volumes from the Standard view, use System Manager from the Advanced view, and enable BlueXP data services.
 
-== Create volumes using the Standard view
+== Create volumes from the Standard view
 
 After you discover your on-prem ONTAP cluster from BlueXP using a Connector, you can open the working environment to provision and manage storage.
 
 === Create volumes
 
-BlueXP enables you to create NFS or CIFS volumes on existing aggregates. You can't create new aggregates on an on-prem ONTAP cluster from BlueXP.
+BlueXP enables you to create NFS or CIFS volumes on existing aggregates. You can't create new aggregates on an on-prem ONTAP cluster from the BlueXP Standard view. You need to use the Advanced view to create aggregates.
 
-A BlueXP feature called "templates" enables you to create volumes that are optimized for the workload requirements for certain applications; such as databases or streaming services. If your organization has created volume templates that you should use, follow <<Creating volumes from templates,these steps>>.
+A BlueXP feature called "templates" enables you to create volumes that are optimized for the workload requirements for certain applications; such as databases or streaming services. If your organization has created volume templates that you should use, follow <<Create volumes from templates,these steps>>.
 
 .Steps
 
@@ -99,7 +99,9 @@ image:screenshot_define_ontap_vol_from_template.png[A screenshot showing a blank
 
 . In the _Context_ area, the Working Environment is filled in with the name of the working environment you started with. You need to select the *Storage VM* and *Aggregate* where the volume will be created.
 
-. Add values for all of the parameters that are not hard-coded from the template. See <<Creating volumes,creating volumes>> for details about all the parameters you need to complete to deploy an on-prem ONTAP volume.
+. Add values for all of the parameters that are not hard-coded from the template. 
++
+<<Create volumes,Learn about the parameters that you need to create the volume>>.
 
 . Click *Run Template* after you have defined all the parameters needed for this volume.
 
@@ -119,7 +121,7 @@ If you provisioned a CIFS share, give users or groups permissions to the files a
 
 == Administer ONTAP using the Advanced View
 
-If you need to perform advanced management of an ONTAP on-premises cluster, you can do so using ONTAP System Manager, which is a management interface that's provided with an ONTAP system. We have included the System Manager interface directly inside BlueXP so that you don't need to leave BlueXP for advanced management.
+If you need to perform advanced management of an on-premises ONTAP cluster, you can do so using ONTAP System Manager, which is a management interface that's provided with an ONTAP system. We have included the System Manager interface directly inside BlueXP so that you don't need to leave BlueXP for advanced management.
 
 This Advanced View is available as a Preview. We plan to refine this experience and add enhancements in upcoming releases. Please send us feedback by using the in-product chat.
 

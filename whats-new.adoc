@@ -20,13 +20,19 @@ Learn what's new with on-prem ONTAP cluster management in BlueXP (formerly Cloud
 
 The following changes were introduced with the 3.9.24 release of the Connector.
 
-=== Manage locally
+=== New way to discover on-prem ONTAP clusters
 
-blurb
+You can now directly discover your on-prem ONTAP clusters without using a Connector. This option enables cluster management through System Manager only. You can't enable any data services on the working environment.
+
+https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html[Learn more about this discovery and management option].
 
 === FlexGroup volumes
 
-blurb
+For on-prem ONTAP clusters that are discovered through a Connector, the Standard view in BlueXP now shows the FlexGroup volumes that were created through System Manager or the ONTAP CLI. You can also manage these volumes by cloning them, editing their settings, deleting them, and more.
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-flexgroup-volumes.png[A screenshot that shows a FlexGroup volume on the Volumes page for an on-prem ONTAP cluster.]
+
+BlueXP does not support creating FlexGroup volumes. You'll need to continue using System Manager or the CLI to create FlexGroup volumes.
 
 == 18 September 2022
 
@@ -57,6 +63,7 @@ If you need to perform advanced management of an ONTAP on-premises cluster, you 
 This Advanced View is available as a Preview with on-premises ONTAP clusters running 9.10.0 or later. We plan to refine this experience and add enhancements in upcoming releases. Please send us feedback by using the in-product chat.
 
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-administer-advanced-view.html[Learn more about the Advanced View].
+// end::whats-new[]
 
 == 27 February 2022
 
@@ -65,7 +72,6 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-administer-advance
 Now you can view an inventory of your on-prem ONTAP clusters along with their hardware and service contracts expiration dates. Additional details about the clusters are also available.
 
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html#viewing-cluster-information-and-contract-details[See how to view this important on-prem cluster information]. You'll need to have a NetApp Support Site account (NSS) for the clusters, and the NSS credentials will need to be attached to your Cloud Manager account.
-// end::whats-new[]
 
 == 11 January 2022
 
