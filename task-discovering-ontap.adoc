@@ -66,10 +66,6 @@ If the Connector is in the cloud, all outbound communication is allowed by the p
 +
 The default "mgmt" firewall policy allows inbound HTTPS access from all IP addresses. If you modified this default policy, or if you created your own firewall policy, you must associate the HTTPS protocol with that policy and enable access from the Connector host.
 
-* You need a valid set of NetApp Support Site credentials. 
-+
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html[Learn how to add an NSS account to BlueXP^].
-
 .Steps
 
 . From the navigation menu, select *Storage > Canvas*.
