@@ -1,24 +1,29 @@
 ---
 sidebar: sidebar
-permalink: task-provisioning-ontap.html
-keywords: ontap, cluster, manage, provision, provisioning, volumes, discovering, fas, aff, creating volumes, adding volumes
-summary: After you discover your on-prem ONTAP cluster from BlueXP, you can open the working environment to provision and manage storage.
+permalink: task-manage-ontap-connector.html
+keywords: system manager, advanced view, access system manager, load system manager, use system manager
+summary: If you need to perform advanced management of an ONTAP on-premises cluster, you can do so using ONTAP System Manager, which is a management interface that's provided with an ONTAP system. We have included the System Manager interface directly inside BlueXP so that you don't need to leave BlueXP for advanced management.
 ---
 
-= Managing storage for on-prem ONTAP clusters
+= Manage on-prem ONTAP clusters that were discovered with a Connector
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-After you discover your on-prem ONTAP cluster from BlueXP, you can open the working environment to provision and manage storage.
+[.lead]
+If you discovered an on-prem ONTAP cluster using a Connector, you can create volumes from the Standard view, use System Manager from the Advanced view, and enable BlueXP data services.
 
-== Creating volumes
+== Create volumes from the Standard view
 
-BlueXP enables you to create NFS or CIFS volumes on existing aggregates. You can't create new aggregates on an on-prem ONTAP cluster from BlueXP.
+After you discover your on-prem ONTAP cluster from BlueXP using a Connector, you can open the working environment to provision and manage storage.
 
-A BlueXP feature called "templates" enables you to create volumes that are optimized for the workload requirements for certain applications; such as databases or streaming services. If your organization has created volume templates that you should use, follow <<Creating volumes from templates,these steps>>.
+=== Create volumes
+
+BlueXP enables you to create NFS or CIFS volumes on existing aggregates. You can't create new aggregates on an on-prem ONTAP cluster from the BlueXP Standard view. You need to use the Advanced view to create aggregates.
+
+A BlueXP feature called "templates" enables you to create volumes that are optimized for the workload requirements for certain applications; such as databases or streaming services. If your organization has created volume templates that you should use, follow <<Create volumes from templates,these steps>>.
 
 .Steps
 
@@ -62,19 +67,11 @@ The following list describes fields for which you might need guidance:
 
 |===
 
-.. *Usage Profile*: Choose whether to enable or disable storage efficiency features on the volume.
-+
-ONTAP includes several storage efficiency features that can reduce the total amount of storage that you need. NetApp storage efficiency features provide the following benefits:
-+
-Thin provisioning:: Presents more logical storage to hosts or users than you actually have in your physical storage pool. Instead of preallocating storage space, storage space is allocated dynamically to each volume as data is written.
-
-Deduplication:: Improves efficiency by locating identical blocks of data and replacing them with references to a single shared block. This technique reduces storage capacity requirements by eliminating redundant blocks of data that reside in the same volume.
-
-Compression:: Reduces the physical capacity required to store data by compressing data within a volume on primary, secondary, and archive storage.
+.. *Usage Profile*: Choose whether to enable or disable storage efficiency features on the volume in order to reduce the total amount of storage that you need.
 
 .. *Review*: Review details about the volume and then click *Add*.
 
-== Creating volumes from templates
+=== Create volumes from templates
 
 If your organization has created on-premises ONTAP volume templates so you can deploy volumes that are optimized for the workload requirements for certain applications, follow the steps in this section.
 
@@ -102,7 +99,9 @@ image:screenshot_define_ontap_vol_from_template.png[A screenshot showing a blank
 
 . In the _Context_ area, the Working Environment is filled in with the name of the working environment you started with. You need to select the *Storage VM* and *Aggregate* where the volume will be created.
 
-. Add values for all of the parameters that are not hard-coded from the template. See <<Creating volumes,creating volumes>> for details about all the parameters you need to complete to deploy an on-prem ONTAP volume.
+. Add values for all of the parameters that are not hard-coded from the template. 
++
+<<Create volumes,Learn about the parameters that you need to create the volume>>.
 
 . Click *Run Template* after you have defined all the parameters needed for this volume.
 
@@ -120,25 +119,113 @@ Additionally, if any secondary action is implemented in the template, for exampl
 
 If you provisioned a CIFS share, give users or groups permissions to the files and folders and verify that those users can access the share and create a file.
 
-== Replicating data
+== Administer ONTAP using the Advanced View
+
+If you need to perform advanced management of an on-premises ONTAP cluster, you can do so using ONTAP System Manager, which is a management interface that's provided with an ONTAP system. We have included the System Manager interface directly inside BlueXP so that you don't need to leave BlueXP for advanced management.
+
+This Advanced View is available as a Preview. We plan to refine this experience and add enhancements in upcoming releases. Please send us feedback by using the in-product chat.
+
+=== Features
+
+The Advanced View in BlueXP gives you access to additional management features:
+
+* Advanced storage management
++
+Manage consistency groups, shares, qtrees, quotas, and Storage VMs.
+
+* Networking management
++
+Manage IPspaces, network interfaces, portsets, and ethernet ports.
+
+* Events and jobs
++
+View event logs, system alerts, jobs, and audit logs.
+
+* Advanced data protection
++
+Protect storage VMs, LUNs, and consistency groups.
+
+* Host management
++
+Set up SAN initiator groups and NFS clients.
+
+=== Supported configurations
+
+Advanced management through System Manager is supported with on-premises ONTAP clusters running 9.10.0 or later.
+
+System Manager integration is not supported in GovCloud regions or in regions that have no outbound internet access.
+
+=== Limitations
+
+A few System Manager features are not supported with on-premises ONTAP clusters when using the Advanced View in BlueXP:
+
+* Cluster setup
++
+After you set the management IP address and configure the admin password on an on-prem ONTAP cluster, you can discover the cluster in BlueXP and then continue cluster setup from the Advanced View.
+
+* Cloud Backup activation
++
+Enable Cloud Backup on an on-premises cluster directly from Cloud Backup. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html[Learn how to get started^].
+
+* On-demand upgrades
++
+On-demand upgrades of firmware and software are not available.
+
+* Role-based access control
++
+Role-based access control from System Manager is not supported.
+
+=== How to get started
+
+Open an on-premises ONTAP working environment and click the Advanced View option.
+
+.Steps
+
+. On the Canvas page, double-click the name of an on-premises ONTAP working environment.
+
+. In the top-right, click *Switch to Advanced View*.
++
+image:screenshot-advanced-view.png[A screenshot of an on-prem ONTAP working environment that shows the Switch to Advanced View option.]
+
+. If the confirmation message appears, read through it and click *Close*.
+
+. Use System Manager to manage ONTAP.
+
+. If needed, click *Switch to Standard View* to return to standard management through BlueXP.
++
+image:screenshot-standard-view.png[A screenshot of an on-prem ONTAP working environment that shows the Switch to Standard View option.]
+
+=== Get help with System Manager
+
+If you need help using System Manager with ONTAP, you can refer to https://docs.netapp.com/us-en/ontap/index.html[ONTAP documentation^] for step-by-step instructions. Here are a few links that might help:
+
+* https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html[Volume and LUN management^]
+* https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html[Network management^]
+* https://docs.netapp.com/us-en/ontap/concept_dp_overview.html[Data protection^] 
+
+== Enable BlueXP data services
+
+Enable BlueXP data services on your working environments to replicate, back up, scan, and tier data.
+
+=== Replicate data
 
 You can replicate data between Cloud Volumes ONTAP systems and ONTAP clusters by choosing a one-time data replication, which can help you move data to and from the cloud, or a recurring schedule, which can help with disaster recovery or long-term retention.
 
 https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html[Learn how to replicate data^]
 
-== Backing up data
+=== Back up data
 
 You can back up data from your on-premises ONTAP system to low-cost object storage in the cloud by using Cloud Backup. This service provides backup and restore capabilities for protection and long-term archive of your on-prem and cloud data.
 
 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html[Learn how to back up data to the cloud^]
 
-== Scan, map, and classify your data
+=== Scan, map, and classify your data
 
 Cloud Data Sense can scan your corporate on-premises clusters to map and classify data, and to identify private information. This can help reduce your security and compliance risk, decrease storage costs, and assist with your data migration projects.
 
 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html[Learn how to scan, map, and classify your data^]
 
-== Tiering data to the cloud
+=== Tier data to the cloud
 
 Extend your data center to the cloud by automatically tiering inactive data from ONTAP clusters to object storage using Cloud Tiering.
 
