@@ -175,7 +175,7 @@ On-demand upgrades of firmware and software are not available.
 +
 Role-based access control from System Manager is not supported.
 
-=== How to get started
+=== Use the Advanced View (System Manager)
 
 Open an on-premises ONTAP working environment and click the Advanced View option.
 
