@@ -102,7 +102,7 @@ TIP: When you access System Manager on an on-premises ONTAP cluster running 9.12
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-overview.html[Learn how to get started with BlueXP^]
 
-* The on-premises ONTAP cluster must be running 9.12.1 or later with connectivity to the BlueXP service (\https://bluexp.netapp.com).
+* The on-premises ONTAP cluster must be running 9.12.1 or later with connectivity to the BlueXP service.
 
 * You need the cluster management IP address and the password for the admin user account.
 +
