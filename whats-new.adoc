@@ -22,7 +22,7 @@ The following changes were introduced with the 3.9.24 release of the Connector.
 
 === New way to discover on-prem ONTAP clusters
 
-You can now directly discover your on-prem ONTAP clusters without using a Connector. This option enables cluster management through System Manager only. You can't enable any data services on the working environment.
+You can now directly discover your on-prem ONTAP clusters without using a Connector. This option enables cluster management through System Manager only. You can't enable any BlueXP data services on this type of working environment.
 
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html[Learn more about this discovery and management option].
 
