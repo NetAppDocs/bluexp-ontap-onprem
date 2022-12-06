@@ -30,11 +30,39 @@ This option enables you to manage the cluster using the following features:
 A Connector must be installed in a cloud provider or on your premises.
 
 Direct discovery::
-This option enables you to manage the cluster using System Manager. No other management options are available.
+This option enables you to manage the cluster using System Manager. No other management options are available. You can't use the Standard view and you can't enable data services.
 +
 This option doesn't require a Connector.
 
 Once discovered, your clusters are available as a working environment on the BlueXP Canvas.
+
+If you decide to switch to the other discovery option, the on-prem system will be discovered as a separate working environment on the Canvas. If needed, you can then remove the other working environment.
+
+== Limitations
+
+A few System Manager features are not supported from BlueXP:
+
+* Cluster setup
++
+After you set the management IP address and configure the admin password on an on-prem ONTAP cluster, you can discover the cluster in BlueXP.
+
+* Role-based access control (Connector only)
++
+Role-based access control from System Manager is not supported when discovering and managing an on-prem ONTAP cluster using a Connector. You are prompted to enter your admin credentials during the discovery process. Those credentials are used for all actions taken from System Manager.
++
+With the direct discovery option, you're prompted to log in with your ONTAP credentials each time that you open the working environment.
+
+* Cloud Backup activation
++
+Enable Cloud Backup on an on-premises cluster directly from Cloud Backup. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html[Learn how to get started^].
+
+* On-demand upgrades
++
+On-demand upgrades of firmware and software are not available.
+
+* Global search
+
+* User interface settings
 
 == Discover clusters using a Connector
 
@@ -102,11 +130,15 @@ TIP: When you access System Manager on an on-premises ONTAP cluster running 9.12
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-overview.html[Learn how to get started with BlueXP^]
 
-* The on-premises ONTAP cluster must be running 9.12.1 or later with connectivity to the BlueXP service.
+* The on-premises cluster must be running ONTAP 9.12.1 or later.
+
+* The cluster must have inbound and outbound connectivity to the BlueXP service:
++
+\https://cloudmanager.cloud.netapp.com/ontap-service/check-service-connection
 
 * You need the cluster management IP address and the password for the admin user account.
-+
-BlueXP discovers ONTAP clusters using HTTPS. If you use custom firewall policies, the ONTAP cluster must allow inbound HTTPS access through port 443.
+
+* BlueXP discovers ONTAP clusters using HTTPS. If you use custom firewall policies, the ONTAP cluster must allow inbound HTTPS access through port 443.
 +
 The default "mgmt" firewall policy allows inbound HTTPS access from all IP addresses. If you modified this default policy, or if you created your own firewall policy, you must associate the HTTPS protocol with that policy and enable access from the Connector host.
 
