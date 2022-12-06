@@ -157,23 +157,9 @@ System Manager integration is not supported in GovCloud regions or in regions th
 
 === Limitations
 
-A few System Manager features are not supported with on-premises ONTAP clusters when using the Advanced View in BlueXP:
+A few System Manager features are not supported with on-premises ONTAP clusters when using the Advanced View in BlueXP. 
 
-* Cluster setup
-+
-After you set the management IP address and configure the admin password on an on-prem ONTAP cluster, you can discover the cluster in BlueXP and then continue cluster setup from the Advanced View.
-
-* Cloud Backup activation
-+
-Enable Cloud Backup on an on-premises cluster directly from Cloud Backup. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html[Learn how to get started^].
-
-* On-demand upgrades
-+
-On-demand upgrades of firmware and software are not available.
-
-* Role-based access control
-+
-Role-based access control from System Manager is not supported.
+link:reference-limitations.html[Review the list of limitations].
 
 === Use the Advanced View (System Manager)
 

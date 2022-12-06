@@ -17,18 +17,17 @@ If you discovered your on-prem ONTAP cluster directly without using a Connector,
 
 .Limitations
 
-The following System Manager features aren't available:
+A few System Manager features are not supported from BlueXP.
 
-* Global search
-* Digital Advisor (formerly Active IQ) integration, which includes risks and remediation information, capacity usage history, firmware availability notifications, and the ability to view open support cases
-* User interface settings
-* Cloud widget
-* Manual upgrades of ONTAP and firmware
-* Cloud Backup integration
+link:reference-limitations.html[Review the list of limitations].
 
 .Steps
 
 . On the Canvas page, double-click the name of an on-premises ONTAP working environment.
+
+. When prompted, enter your ONTAP credentials.
++
+You're prompted to log in with your ONTAP credentials each time that you open the working environment.
 
 . Use System Manager to manage ONTAP.
 +

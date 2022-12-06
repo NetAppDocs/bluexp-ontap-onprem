@@ -1,0 +1,40 @@
+---
+sidebar: sidebar
+permalink: reference-limitations.html
+keywords: limitations, system manager, unsupported features
+summary: Known limitations identify platforms, devices, or functions that are not supported by this release of the product, or that do not interoperate correctly with it. Review these limitations carefully.
+---
+
+= Known limitations
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Known limitations identify platforms, devices, or functions that are not supported by this release of the product, or that do not interoperate correctly with it. Review these limitations carefully.
+
+A few System Manager features are not supported from BlueXP:
+
+* Cluster setup
++
+After you set the management IP address and configure the admin password on an on-prem ONTAP cluster, you can discover the cluster in BlueXP.
+
+* Role-based access control (Connector only)
++
+Role-based access control from System Manager is not supported when discovering and managing an on-prem ONTAP cluster using a Connector. You are prompted to enter your admin credentials during the discovery process. Those credentials are used for all actions taken from System Manager.
++
+With the direct discovery option, you're prompted to log in with your ONTAP credentials each time that you open the working environment.
+
+* Cloud Backup activation
++
+Enable Cloud Backup on an on-premises cluster directly from Cloud Backup. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html[Learn how to get started^]
+
+* On-demand upgrades
++
+On-demand upgrades of firmware and software are not available.
+
+* Global search
+
+* User interface settings
