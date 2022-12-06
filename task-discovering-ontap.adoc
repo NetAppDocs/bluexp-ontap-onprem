@@ -23,18 +23,20 @@ Discovery through a Connector::
 This option enables you to manage the cluster using the following features:
 
 * The Standard view, which provides basic volume operations
-* The Advanced view, which provides management through System Manager
+* The Advanced view, which provides management through System Manager (supported with ONTAP 9.10.0 and later)
 * Integration with BlueXP data services, which provide data replication, backup and recovery, data classification, and data tiering
 
 +
-A Connector must be installed in a cloud provider or on your premises.
+A Connector must be installed in a cloud provider or on your premises. <<Discover clusters using a Connector,Review the requirements and step-by-step instructions below>>.
 
 Direct discovery::
-This option enables you to manage the cluster using System Manager. No other management options are available.
+This option enables you to manage the cluster using System Manager. No other management options are available. You can't use the Standard view and you can't enable data services.
 +
-This option doesn't require a Connector.
+This option doesn't require a Connector. <<Discover clusters directly,Review the requirements and step-by-step instructions below>>.
 
 Once discovered, your clusters are available as a working environment on the BlueXP Canvas.
+
+If you decide to use the other discovery option at a later time, you will need to discover the on-prem cluster as a separate working environment on the Canvas. You then have the option to remove the other working environment.
 
 == Discover clusters using a Connector
 
@@ -55,8 +57,9 @@ If you want to tier cold data to the cloud, then you should review requirements 
 ** https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html[Learn about Cloud Tiering^]
 
 * You need the cluster management IP address and the password for the admin user account to add the cluster to BlueXP.
-+
-BlueXP discovers ONTAP clusters using HTTPS. If you use custom firewall policies, they must meet the following requirements:
+
+
+* BlueXP discovers ONTAP clusters using HTTPS. If you use custom firewall policies, they must meet the following requirements:
 
 ** The Connector host must allow outbound HTTPS access through port 443.
 +
@@ -86,7 +89,7 @@ image:screenshot_discover_ontap.png[A screenshot that shows an example of the ON
 
 .Result
 
-BlueXP discovers the cluster and adds it to a working environment in the Canvas.
+BlueXP discovers the cluster and adds it as a working environment on the Canvas.
 
 link:task-manage-ontap-connector.html[Learn how to manage the clusters].
 
@@ -102,11 +105,15 @@ TIP: When you access System Manager on an on-premises ONTAP cluster running 9.12
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-overview.html[Learn how to get started with BlueXP^]
 
-* The on-premises ONTAP cluster must be running 9.12.1 or later with connectivity to the BlueXP service.
+* The on-premises cluster must be running ONTAP 9.12.1 or later.
+
+* The cluster must have inbound and outbound connectivity to the BlueXP service:
++
+\https://cloudmanager.cloud.netapp.com/ontap-service/check-service-connection
 
 * You need the cluster management IP address and the password for the admin user account.
-+
-BlueXP discovers ONTAP clusters using HTTPS. If you use custom firewall policies, the ONTAP cluster must allow inbound HTTPS access through port 443.
+
+* BlueXP discovers ONTAP clusters using HTTPS. If you use custom firewall policies, the ONTAP cluster must allow inbound HTTPS access through port 443.
 +
 The default "mgmt" firewall policy allows inbound HTTPS access from all IP addresses. If you modified this default policy, or if you created your own firewall policy, you must associate the HTTPS protocol with that policy and enable access from the Connector host.
 
@@ -122,6 +129,6 @@ The default "mgmt" firewall policy allows inbound HTTPS access from all IP addre
 
 .Result
 
-BlueXP discovers the cluster and adds it to a working environment in the Canvas.
+BlueXP discovers the cluster and adds it as a working environment on the Canvas.
 
 link:task-manage-ontap-direct.html[Learn how to manage the clusters].
