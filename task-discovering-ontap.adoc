@@ -23,46 +23,24 @@ Discovery through a Connector::
 This option enables you to manage the cluster using the following features:
 
 * The Standard view, which provides basic volume operations
-* The Advanced view, which provides management through System Manager
+* The Advanced view, which provides management through System Manager (supported with ONTAP 9.10.0 and later)
 * Integration with BlueXP data services, which provide data replication, backup and recovery, data classification, and data tiering
 
 +
 A Connector must be installed in a cloud provider or on your premises.
++
+<<Discover clusters using a Connector,Review the requirements and step-by-step instructions below>>.
 
 Direct discovery::
 This option enables you to manage the cluster using System Manager. No other management options are available. You can't use the Standard view and you can't enable data services.
 +
 This option doesn't require a Connector.
++
+<<Discover clusters directly,Review the requirements and step-by-step instructions below>>.
 
 Once discovered, your clusters are available as a working environment on the BlueXP Canvas.
 
-If you decide to switch to the other discovery option, the on-prem system will be discovered as a separate working environment on the Canvas. If needed, you can then remove the other working environment.
-
-== Limitations
-
-A few System Manager features are not supported from BlueXP:
-
-* Cluster setup
-+
-After you set the management IP address and configure the admin password on an on-prem ONTAP cluster, you can discover the cluster in BlueXP.
-
-* Role-based access control (Connector only)
-+
-Role-based access control from System Manager is not supported when discovering and managing an on-prem ONTAP cluster using a Connector. You are prompted to enter your admin credentials during the discovery process. Those credentials are used for all actions taken from System Manager.
-+
-With the direct discovery option, you're prompted to log in with your ONTAP credentials each time that you open the working environment.
-
-* Cloud Backup activation
-+
-Enable Cloud Backup on an on-premises cluster directly from Cloud Backup. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html[Learn how to get started^].
-
-* On-demand upgrades
-+
-On-demand upgrades of firmware and software are not available.
-
-* Global search
-
-* User interface settings
+If you decide to use the other discovery option at a later time, you will need to discover the on-prem cluster as a separate working environment on the Canvas. You then have the option to remove the other working environment.
 
 == Discover clusters using a Connector
 

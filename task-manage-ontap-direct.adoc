@@ -19,7 +19,7 @@ If you discovered your on-prem ONTAP cluster directly without using a Connector,
 
 A few System Manager features are not supported from BlueXP.
 
-link:task-discovering-ontap.html[Review the list of limitations].
+link:reference-limitations.html[Review the list of limitations].
 
 .Steps
 

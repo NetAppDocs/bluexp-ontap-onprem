@@ -159,7 +159,7 @@ System Manager integration is not supported in GovCloud regions or in regions th
 
 A few System Manager features are not supported with on-premises ONTAP clusters when using the Advanced View in BlueXP. 
 
-link:task-discovering-ontap.html[Review the list of limitations].
+link:reference-limitations.html[Review the list of limitations].
 
 === Use the Advanced View (System Manager)
 
