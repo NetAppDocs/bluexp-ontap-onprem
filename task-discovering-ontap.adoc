@@ -48,8 +48,6 @@ Discover your on-prem ONTAP clusters with a Connector to take advantage of all m
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-overview.html[Learn how to get started with BlueXP^]
 
-* The computer that you're using to access the BlueXP console must have a network connection to the on-prem ONTAP cluster, similar to how you would provide connections to other resources in your private network.
-
 * A Connector must be installed in a cloud provider or on your premises.
 +
 If you want to tier cold data to the cloud, then you should review requirements for the Connector based on where you plan to tier cold data.
