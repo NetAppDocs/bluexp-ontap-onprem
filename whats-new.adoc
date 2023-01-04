@@ -18,8 +18,6 @@ Learn what's new with on-prem ONTAP cluster management in BlueXP (formerly Cloud
 // tag::whats-new[]
 == 1 January 2023
 
-The following changes were introduced with the 3.9.25 release of the Connector.
-
 === Save ONTAP credentials
 
 When you open an on-prem ONTAP working environment that was discovered directly without using a Connector, you now have the option to save your ONTAP cluster credentials so that you don't need to enter them each time that you open the working environment.
