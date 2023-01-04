@@ -18,7 +18,7 @@ Learn what's new with on-prem ONTAP cluster management in BlueXP (formerly Cloud
 // tag::whats-new[]
 == 1 January 2023
 
-The following changes were introduced with the 3.9.22 release of the Connector.
+The following changes were introduced with the 3.9.25 release of the Connector.
 
 === Save ONTAP credentials
 
