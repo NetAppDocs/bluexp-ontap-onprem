@@ -20,7 +20,7 @@ Discover on-prem ONTAP clusters from BlueXP so that you can start managing volum
 BlueXP provides two ways to discover and manage your on-prem ONTAP clusters:
 
 Discovery through a Connector:: 
-This option enables you to manage the cluster using the following features:
+This option enables you to manage clusters running ONTAP 8.3 by using the following features:
 
 * The Standard view, which provides basic volume operations
 * The Advanced view, which provides management through System Manager (supported with ONTAP 9.10.0 and later)
@@ -30,7 +30,7 @@ This option enables you to manage the cluster using the following features:
 A Connector must be installed in a cloud provider or on your premises. <<Discover clusters using a Connector,Review the requirements and step-by-step instructions below>>.
 
 Direct discovery::
-This option enables you to manage the cluster using System Manager. No other management options are available. You can't use the Standard view and you can't enable data services.
+This option enables you to manage clusters running ONTAP 9.12.1 and later by using System Manager. No other management options are available. You can't use the Standard view and you can't enable data services.
 +
 This option doesn't require a Connector. <<Discover clusters directly,Review the requirements and step-by-step instructions below>>.
 
@@ -47,6 +47,8 @@ Discover your on-prem ONTAP clusters with a Connector to take advantage of all m
 * You should have gotten started with BlueXP, which includes logging in and setting up an account.
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-overview.html[Learn how to get started with BlueXP^]
+
+* The on-premises cluster must be running ONTAP 8.3 or later.
 
 * A Connector must be installed in a cloud provider or on your premises.
 +
