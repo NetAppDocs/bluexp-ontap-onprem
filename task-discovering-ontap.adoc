@@ -76,7 +76,7 @@ The default "mgmt" firewall policy allows inbound HTTPS access from all IP addre
 
 . On the Canvas page, click *Add Working Environment* and select *On-Premises*.
 
-. Select *On-Premises ONTAP*.
+. Next to On-Premises ONTAP, select *Discover*.
 
 . If you're prompted, create a Connector.
 +
@@ -126,7 +126,7 @@ The default "mgmt" firewall policy allows inbound HTTPS access from all IP addre
 
 . On the Canvas page, click *Add Working Environment* and select *On-Premises*.
 
-. Select *Local On-Premises ONTAP (Direct)*.
+. Next to Local On-Premises ONTAP (Direct), select *Discover*.
 
 . Enter the cluster management IP address, the password for the admin user account, and click *Add*.
 
