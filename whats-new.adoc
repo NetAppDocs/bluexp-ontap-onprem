@@ -16,6 +16,20 @@ summary: Learn what's new with on-prem ONTAP cluster management in BlueXP.
 Learn what's new with on-prem ONTAP cluster management in BlueXP (formerly Cloud Manager).
 
 // tag::whats-new[]
+== 4 May 2023
+
+=== Upgrade ONTAP version image and hardware firmware
+
+Beginning with ONTAP 9.13.1, you can use System Manager (advanced view) to upgrade the ONTAP version image and hardware firmware.
+
+* If you do _not_ have a connector, you can choose to manually upgrade the version image and firmware from your local machine or from an accessible server.   
+
+* If you have a connector, you can perform a manual upgrade of the ONTAP version and firmware, and you can also choose to receive automatic upgrades to the firmware to stay up to date.
+
+=== Enable Cloud Backup Service
+
+Beginning with ONTAP 9.13.1, you can use System Manager (advanced view) to enable Cloud Backup Service if you have a connector.
+
 == 1 January 2023
 
 === Save ONTAP credentials
@@ -104,3 +118,5 @@ We redesigned the create volume wizard for ease of use and you can now choose a 
 * A new link:task-managing-ontap.html#viewing-on-prem-workloads-that-are-candidates-for-the-cloud[Cloud-Ready Workloads tab^] provides a list of the workloads or volumes that we have identified as ideal to move to the cloud from your on-prem ONTAP clusters. Moving some of these volumes could reduce your costs and improve performance and resiliency.
 +
 See link:https://www.netapp.com/knowledge-center/what-is-lift-and-shift[What is Lift and Shift?]
+
+// 28 Mar 2023, ONTAPDOC-760

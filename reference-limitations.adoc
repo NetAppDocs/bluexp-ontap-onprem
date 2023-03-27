@@ -27,14 +27,17 @@ Role-based access control from System Manager is not supported when discovering 
 +
 With the direct discovery option, you're prompted to log in with your ONTAP credentials each time that you open the working environment.
 
+
+// Modified for ONTAP 9.13.1   ONTAPDOC-760  
 * Cloud Backup activation
 +
-Enable Cloud Backup on an on-premises cluster directly from Cloud Backup. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html[Learn how to get started^]
+If you do _not_ have a connector, you cannot use System Manager (advanced view) to enable Cloud Backup Service.  However, you can enable Cloud Backup on an on-premises cluster directly from Cloud Backup. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html[Learn how to get started^]
 
-* On-demand upgrades
-+
-On-demand upgrades of firmware and software are not available.
-
-* Global search
-
-* User interface settings
+// Removed for ONTAP 9.13.1   ONTAPDOC-760  
+//* On-demand upgrades
+//+
+//On-demand upgrades of firmware and software are not available.
+//
+//* Global search
+//
+//* User interface settings
