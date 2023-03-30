@@ -22,7 +22,7 @@ Learn what's new with on-prem ONTAP cluster management in BlueXP.
 
 When you discover an on-prem ONTAP cluster from the BlueXP console, you'll now see a single option:
 
-image:screenshot-discover-on-prem-ontap.png[A screenshot that shows the Discover on-premises ONTAP option available when creating a working environment]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-discover-on-prem-ontap.png[A screenshot that shows the Discover on-premises ONTAP option available when creating a working environment]
 
 Previously, there were separate flows for direct discovery and for discovery with a Connector. Both of those options are still available, but merged into a single flow.
 
