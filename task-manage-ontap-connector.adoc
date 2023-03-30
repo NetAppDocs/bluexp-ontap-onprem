@@ -194,7 +194,7 @@ If you need help using System Manager with ONTAP, you can refer to https://docs.
 Enable BlueXP data services on your working environments to replicate data, back up data, tier data, and more.
 
 Replicate data::
-Replicate data between Cloud Volumes ONTAP systems and ONTAP clusters by choosing a one-time data replication, which can help you move data to and from the cloud, or a recurring schedule, which can help with disaster recovery or long-term retention.
+Replicate data between Cloud Volumes ONTAP systems, Amazon FSx for ONTAP file systems, and ONTAP clusters. Choose a one-time data replication, which can help you move data to and from the cloud, or a recurring schedule, which can help with disaster recovery or long-term data retention.
 +
 https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html[Replication documentation^]
 
@@ -214,7 +214,7 @@ Extend your data center to the cloud by automatically tiering inactive data from
 https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html[Cloud Tiering documentation^]
 
 Maintain health, uptime, and performance::
-Implement suggested remediations before an outage or failure occurs.
+Implement suggested remediations to ONTAP clusters before an outage or failure occurs.
 +
 https://docs.netapp.com/us-en/bluexp-operational-resiliency/index.html[Operational resiliency documentation^]
 
