@@ -15,11 +15,11 @@ summary: Known limitations identify platforms, devices, or functions that are no
 [.lead]
 Known limitations identify platforms, devices, or functions that are not supported by this release of the product, or that do not interoperate correctly with it. Review these limitations carefully.
 
-A few System Manager features are not supported from BlueXP:
+A few System Manager features have limitations or are not supported from BlueXP:
 
 * Cluster setup
 +
-After you set the management IP address and configure the admin password on an on-prem ONTAP cluster, you can discover the cluster in BlueXP.
+After you set the management IP address and configure the admin password on an on-premises ONTAP cluster, you can discover the cluster in BlueXP.
 
 * Role-based access control (Connector only)
 +
@@ -28,16 +28,15 @@ Role-based access control from System Manager is not supported when discovering 
 With the direct discovery option, you're prompted to log in with your ONTAP credentials each time that you open the working environment.
 
 
-// Modified for ONTAP 9.13.1   ONTAPDOC-760  
 * Cloud Backup activation
 +
-If you do _not_ have a connector, you cannot use System Manager (advanced view) to enable Cloud Backup Service.  However, you can enable Cloud Backup on an on-premises cluster directly from Cloud Backup. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html[Learn how to get started^]
+If you do _not_ have a Connector, you cannot use System Manager (advanced view) to enable Cloud Backup.  However, you can enable Cloud Backup on an on-premises cluster directly from Cloud Backup. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html[Learn how to get started^]
 
-// Removed for ONTAP 9.13.1   ONTAPDOC-760  
-//* On-demand upgrades
-//+
-//On-demand upgrades of firmware and software are not available.
-//
-//* Global search
-//
-//* User interface settings
+ 
+* On-demand upgrades
++
+On-demand upgrades of firmware and software are not available for ONTAP 9.12.1 and earlier.
+
+* Global search
+
+* User interface settings
