@@ -28,10 +28,14 @@ link:reference-limitations.html[Review the list of limitations].
 .Steps
 
 . On the Canvas page, double-click the name of an on-premises ONTAP working environment.
-
-. When prompted, enter your ONTAP credentials.
 +
-You're prompted to log in with your ONTAP credentials each time that you open the working environment. You have the option to save the credentials so that you don't need to enter them each time. If you use this option, the credentials are associated with your BlueXP user only. They aren't saved for use by anyone else in your account.
+The working environment icon identifies clusters that were discovered directly:
++
+image:screenshot-direct-discovery-we.png[A screenshot of the working environment icon that appears on the Canvas]
+
+. If prompted, enter your ONTAP credentials.
++
+You're prompted to log in with your ONTAP credentials each time that you open the working environment, if you don't save the credentials. You have the option to save the credentials so that you don't need to enter them each time. If you use this option, the credentials are associated with your BlueXP user only. They aren't saved for use by anyone else in your account.
 +
 image:screenshot-credentials.png[A screenshot that shows the prompt to enter the user name and password for an ONTAP cluster.]
 
