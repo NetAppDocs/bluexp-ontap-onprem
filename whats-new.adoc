@@ -28,7 +28,7 @@ Beginning with ONTAP 9.13.1, you can use System Manager (advanced view) to upgra
 
 === Enable Cloud Backup
 
-Beginning with ONTAP 9.13.1, you can use System Manager (advanced view) to enable Cloud Backup if you have a Connector.
+Beginning with ONTAP 9.13.1, you can use System Manager (advanced view) to enable Cloud Backup if you discovered the cluster using a Connector.
 
 == 1 January 2023
 
