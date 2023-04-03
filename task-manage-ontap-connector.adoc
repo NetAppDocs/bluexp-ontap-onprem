@@ -15,6 +15,12 @@ summary: If you need to perform advanced management of an ONTAP on-premises clus
 [.lead]
 If you discovered an on-prem ONTAP cluster using a Connector, you can create volumes from the Standard view, use System Manager from the Advanced view, and enable BlueXP data services.
 
+On the Canvas, the working environment icon for a cluster that you discovered with a Connector should look similar to the following:
+
+image:screenshot-connector-we.png[A screenshot of the working environment icon that appears on the Canvas]
+
+If a working environment was discovered directly, the working environment icon includes the word "Direct."
+
 == Create volumes from the Standard view
 
 After you discover your on-prem ONTAP cluster from BlueXP using a Connector, you can open the working environment to provision and manage storage.
