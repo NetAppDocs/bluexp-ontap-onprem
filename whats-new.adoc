@@ -68,7 +68,7 @@ The following changes were introduced with the 3.9.22 release of the Connector.
 
 We've introduced a new Overview page to provide key details about an on-premises ONTAP cluster. For example, you can now view details like storage efficiency, capacity distribution, and system information.
 
-You can also view details about integration with other NetApp cloud services that enable data tiering, data replication, and backups.
+You can also view details about integration with other BlueXP services that enable data tiering, data replication, and backups.
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-overview.png[A screenshot that shows the Overview page for an on-prem ONTAP cluster.]
 
