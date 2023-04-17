@@ -20,7 +20,7 @@ Learn what's new with on-premises ONTAP cluster management in BlueXP (formerly C
 
 === Upgrade ONTAP version image and hardware firmware
 
-Beginning with ONTAP 9.13.1, you can use System Manager (advanced view) to upgrade the ONTAP version image and hardware firmware.
+Beginning with ONTAP 9.13.1, you can use System Manager (advanced view) to upgrade the ONTAP version image and hardware firmware if the cluster version is ONTAP 9.10.1 or later.
 
 * If you do _not_ have a Connector, you can choose to manually upgrade the version image and firmware from your local machine or from an accessible server.   
 
