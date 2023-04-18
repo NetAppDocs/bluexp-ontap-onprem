@@ -18,17 +18,17 @@ Learn what's new with on-premises ONTAP cluster management in BlueXP (formerly C
 // tag::whats-new[]
 == 4 May 2023
 
-=== Upgrade ONTAP version image and hardware firmware
-
-Beginning with ONTAP 9.13.1, you can use System Manager (advanced view) to upgrade the ONTAP version image and hardware firmware if the cluster version is ONTAP 9.10.1 or later.
-
-* If you do _not_ have a Connector, you can choose to manually upgrade the version image and firmware from your local machine or from an accessible server.   
-
-* If you have a Connector, you can perform a manual upgrade of the ONTAP version and firmware, and you can also choose to receive automatic upgrades to the firmware to stay up to date.
-
 === Enable Cloud Backup
 
 Beginning with ONTAP 9.13.1, you can use System Manager (advanced view) to enable Cloud Backup if you discovered the cluster using a Connector.
+
+=== Upgrade ONTAP version image and hardware firmware
+
+Beginning with ONTAP 9.10.1, you can use System Manager (advanced view) to upgrade the ONTAP version image and hardware firmware.
+
+* If you do _not_ have a Connector, you can choose to manually upgrade the version image and firmware from your local machine or from an accessible server. You can also choose to receive automatic upgrades to the firmware to stay up to date.   
+
+* If you have a Connector you can choose to receive automatic upgrades to the firmware to stay up to date.
 
 == 1 January 2023
 
