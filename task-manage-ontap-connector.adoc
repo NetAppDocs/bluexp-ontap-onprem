@@ -119,7 +119,7 @@ image:screenshot_template_creating_resource_ontap.png[A screenshot showing the p
 
 Then the new volume is added to the working environment.
 
-Additionally, if any secondary action is implemented in the template, for example, enabling Cloud Backup on the volume, that action is also performed.
+Additionally, if any secondary action is implemented in the template, for example, enabling BlueXP backup and recovery on the volume, that action is also performed.
 
 .After you finish
 

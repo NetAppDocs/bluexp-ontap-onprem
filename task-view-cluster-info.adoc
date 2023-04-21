@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-view-cluster-info.html
 keywords: software contract, hardware contract, contracts, expiration date, expired, software contract
-summary: You can use the Digital Wallet to view cluster details and hardware and software contract status.
+summary: You can use the BlueXP digital wallet to view cluster details and hardware and software contract status.
 ---
 
 = View cluster information and contract details
@@ -13,13 +13,13 @@ summary: You can use the Digital Wallet to view cluster details and hardware and
 :imagesdir: ./media/
 
 [.lead]
-You can use the _Digital Wallet_ to view cluster details and hardware and software contract status.
+You can use the _BlueXP digital wallet_ to view cluster details and hardware and software contract status.
 
 .Steps
 
 . From the BlueXP navigation menu, select *Governance > Digital wallet*.
 
-. In the *Digital Wallet*, click the *On-Premises ONTAP* tab.
+. In the *BlueXP digital wallet*, select the *On-Premises ONTAP* tab.
 +
 The Software Contract and Hardware Contract expiration dates appear on the line for each cluster.
 
