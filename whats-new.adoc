@@ -89,7 +89,8 @@ If you need to perform advanced management of an ONTAP on-premises cluster, you 
 
 This Advanced View is available as a Preview with on-premises ONTAP clusters running 9.10.0 or later. We plan to refine this experience and add enhancements in upcoming releases. Please send us feedback by using the in-product chat.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-administer-advanced-view.html[Learn more about the Advanced View].
+* link:task-manage-ontap-direct.html[Learn how to manage clusters discovered directly]
+* link:task-manage-ontap-connector.html[Learn how to manage clusters discovered with a Connector]
 
 == 27 February 2022
 
@@ -97,7 +98,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-administer-advance
 
 Now you can view an inventory of your on-prem ONTAP clusters along with their hardware and service contracts expiration dates. Additional details about the clusters are also available.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html#viewing-cluster-information-and-contract-details[See how to view this important on-prem cluster information]. You'll need to have a NetApp Support Site account (NSS) for the clusters, and the NSS credentials will need to be attached to your Cloud Manager account.
+https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-view-cluster-info.html[Learn how to view this important on-prem cluster information]. You'll need to have a NetApp Support Site account (NSS) for the clusters, and the NSS credentials will need to be attached to your Cloud Manager account.
 
 == 11 January 2022
 
@@ -110,15 +111,3 @@ Tags that you add to a volume are now associated with the  tagging feature of th
 === Create volume wizard for on-prem ONTAP clusters has been simplified
 
 We redesigned the create volume wizard for ease of use and you can now choose a custom export policy.
-
-== 8 March 2021
-
-=== On-prem ONTAP cluster information available in the Active IQ service
-
-* When Active IQ displays the list of your on-prem clusters (based on your NSS account), you can click a button to link:task-discovering-ontap.html#discovering-clusters-from-the-discovery-page[discover the cluster^] and add it to the Cloud Manager Canvas. This makes it easier to manage all your storage systems from Cloud Manager.
-
-* When Active IQ determines that one or more clusters require firmware updates, you can click a button to link:task-managing-ontap.html#downloading-new-disk-and-shelf-firmware[download the Ansible playbook and upgrade the cluster firmware^].
-
-* A new link:task-managing-ontap.html#viewing-on-prem-workloads-that-are-candidates-for-the-cloud[Cloud-Ready Workloads tab^] provides a list of the workloads or volumes that we have identified as ideal to move to the cloud from your on-prem ONTAP clusters. Moving some of these volumes could reduce your costs and improve performance and resiliency.
-+
-See link:https://www.netapp.com/knowledge-center/what-is-lift-and-shift[What is Lift and Shift?]

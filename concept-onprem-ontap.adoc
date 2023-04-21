@@ -5,7 +5,7 @@ keywords: ontap, cluster, discover, manage, discovering, fas, aff, discover onpr
 summary: BlueXP can discover the ONTAP clusters running on AFF/FAS controllers and ONTAP Select. Adding on-premises ONTAP systems to BlueXP enables you to manage all of your storage and data assets from a single interface.
 ---
 
-= On-prem ONTAP cluster management from BlueXP
+= On-premises ONTAP cluster management from BlueXP
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -20,8 +20,8 @@ BlueXP can discover the ONTAP clusters running on AFF/FAS controllers and ONTAP 
 * Manage NFS and CIFS volumes
 * Perform advanced management using ONTAP System Manager
 * Get health and performance observability with BlueXP analysis and control
-* Use BlueXP's data services to replicate, back up, scan, classify, and tier data
-* View hardware and software contract status information in the Digital Wallet
+* Use BlueXP services to replicate, back up, scan, classify, and tier data
+* View hardware and software contract status information in the BlueXP digital wallet
 
 == Cost
 
@@ -31,4 +31,4 @@ A cost might be associated, but it depends on the following:
 +
 You can install the Connector in the cloud or on your premises.
 
-* Whether you enable optional data services such as Cloud Backup, Cloud Tiering, and Data Sense.
+* Whether you use BlueXP services such as backup and recovery, tiering, and classification.

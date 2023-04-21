@@ -13,7 +13,7 @@ summary: Discover on-prem ONTAP clusters from BlueXP so that you can start manag
 :imagesdir: ./media/
 
 [.lead]
-Discover on-prem ONTAP clusters from BlueXP so that you can start managing volumes and performing advanced management using ONTAP System Manager, which is available from BlueXP.
+Discover on-premises ONTAP clusters from BlueXP so that you can start managing volumes and performing advanced management using ONTAP System Manager, which is available from BlueXP.
 
 == Discovery and management options
 
@@ -24,7 +24,7 @@ This option enables you to manage clusters running ONTAP 8.3 and later by using 
 
 * The Standard view, which provides basic volume operations
 * The Advanced view, which provides management through System Manager (supported with ONTAP 9.10.0 and later)
-* Integration with BlueXP data services, which provide data replication, back up and recovery, data classification, and data tiering
+* Integration with BlueXP services, which provide data replication, back up and recovery, data classification, and data tiering
 
 +
 This option requires a Connector, which you can install in a cloud provider or on your premises.
@@ -66,7 +66,7 @@ If you want to tier cold data to the cloud, then you should review requirements 
 +
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[Learn about Connectors^]
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html[Switching between Connectors^]
-** https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html[Learn about Cloud Tiering^]
+** https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html[Learn about BlueXP tiering^]
 
 * The Connector host must allow outbound HTTPS access through port 443.
 +
