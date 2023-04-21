@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: concept-aiq-digital-advisor.html
 keywords: concepts, active iq digital advisor, ontap
-summary: Active IQ Digital Advisor is integrated into the BlueXP UI so that you can optimize the operations, security, and performance of your ONTAP clusters in a single pane of glass.
+summary: BlueXP digital advisor enables you to optimize the operations, security, and performance of your ONTAP clusters.
 ---
 
-= Optimize clusters using Digital Advisor
+= Optimize clusters using BlueXP digital advisor
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,11 +13,11 @@ summary: Active IQ Digital Advisor is integrated into the BlueXP UI so that you 
 :imagesdir: ./media/
 
 [.lead]
-https://www.netapp.com/services/support/active-iq/[Digital Advisor^] (formerly Active IQ) is integrated into the BlueXP UI so that you can optimize the operations, security, and performance of your ONTAP clusters in a single pane of glass.
+BlueXP digital advisor enables you to optimize the operations, security, and performance of your ONTAP clusters.
 
 == Features
 
-You can view the overall status of your storage system, high-level information about the wellness of the system, inventory, planning, upgrades, and valuable insights at a watchlist level using Digital Advisor.
+You can view the overall status of your storage system, high-level information about the wellness of the system, inventory, planning, upgrades, and valuable insights at a watchlist level using BlueXP digital advisor.
 
 * Analyze and optimize the health of your storage systems
 * Gain insights regarding all the risks to your storage systems and the actions to mitigate the risks
@@ -28,8 +28,8 @@ You can view the overall status of your storage system, high-level information a
 
 == Supported ONTAP systems
 
-Digital Advisor provides information for all the on-premises ONTAP systems and Cloud Volumes ONTAP systems within your NSS account.
+Digital advisor provides information for all the on-premises ONTAP systems and Cloud Volumes ONTAP systems associated with your NetApp Support SIte (NSS) account.
 
-== How Digital Advisor works with BlueXP
+== More information
 
-Refer to https://docs.netapp.com/us-en/active-iq/digital-advisor-integration-with-bluexp.html[Digital Advisor documentation^] for details.
+https://docs.netapp.com/us-en/active-iq/digital-advisor-integration-with-bluexp.html[Digital advisor documentation^]

@@ -29,7 +29,7 @@ With the direct discovery option, you're prompted to log in with your ONTAP cred
 
 * Cloud Backup activation
 +
-Enable Cloud Backup on an on-premises cluster directly from Cloud Backup. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html[Learn how to get started^]
+Enable Cloud Backup on an on-premises cluster directly from BlueXP backup and recovery. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html[Learn how to get started^]
 
 * On-demand upgrades
 +
