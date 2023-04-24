@@ -24,11 +24,9 @@ Beginning with ONTAP 9.13.1, you can use System Manager (advanced view) to enabl
 
 === Upgrade ONTAP version image and hardware firmware
 
-Beginning with ONTAP 9.10.1, you can use System Manager (advanced view) to upgrade the ONTAP version image and hardware firmware.
+Beginning with ONTAP 9.10.1, you can use System Manager (advanced view) to upgrade the ONTAP version image and hardware firmware. You can choose to receive automatic upgrades to stay up to date, or you can make manual updates from your local machine or accessible server.
 
-* If you do _not_ have a Connector, you can choose to manually upgrade the version image and firmware from your local machine or from an accessible server. You can also choose to receive automatic upgrades to the firmware to stay up to date.   
-
-* If you have a Connector you can choose to receive automatic upgrades to the firmware to stay up to date.
+NOTE: If you do _not_ have a Connector, you cannot make updates from your local machine, only from an accessible server. 
 
 == 1 January 2023
 
