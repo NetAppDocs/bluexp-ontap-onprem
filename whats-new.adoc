@@ -20,13 +20,13 @@ Learn what's new with on-premises ONTAP cluster management in BlueXP (formerly C
 
 === Enable Cloud Backup
 
-Beginning with ONTAP 9.13.1, you can use System Manager (advanced view) to enable Cloud Backup if you discovered the cluster using a Connector.
+Beginning with ONTAP 9.13.1, you can use System Manager (advanced view) to enable Cloud Backup if you discovered the cluster using a Connector. link:https://docs.netapp.com/us-en/ontap/task_cloud_backup_data_using_cbs.html[Learn more about enabling Cloud Backup].
 
 === Upgrade ONTAP version image and hardware firmware
 
-Beginning with ONTAP 9.10.1, you can use System Manager (advanced view) to upgrade the ONTAP version image and hardware firmware. You can choose to receive automatic upgrades to stay up to date, or you can make manual updates from your local machine or accessible server.
+Beginning with ONTAP 9.10.1, you can use System Manager (advanced view) to upgrade the ONTAP version image and hardware firmware. You can choose to receive automatic upgrades to stay up to date, or you can make manual updates from your local machine or a server that can be accessed using BlueXP. link:https://docs.netapp.com/us-en/ontap/task_admin_update_firmware.html#prepare-for-firmware-update[Learn more about upgrading ONTAP and firmware.]
 
-NOTE: If you do _not_ have a Connector, you cannot make updates from your local machine, only from an accessible server. 
+NOTE: If you do _not_ have a Connector, you cannot make updates from your local machine, only from a server that can be accessed using BlueXP. 
 
 == 1 January 2023
 

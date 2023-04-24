@@ -27,15 +27,17 @@ Role-based access control from System Manager is not supported when discovering 
 +
 With the direct discovery option, you're prompted to log in with your ONTAP credentials each time that you open the working environment.
 
-
 * Cloud Backup activation
++ 
+The cluster version must be 9.13.1 to enable Cloud Backup.
 +
-If you do _not_ have a Connector, you cannot use System Manager (advanced view) to enable Cloud Backup.  However, you can enable Cloud Backup on an on-premises cluster directly from Cloud Backup. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html[Learn how to get started^]
-
+If you did _not_ discover a cluster using a Connector, then you can't use System Manager (advanced view) to enable Cloud Backup.  However, you can enable Cloud Backup on an on-premises cluster directly from BlueXP backup and recovery. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html[Learn how to get started^]
  
 * On-demand upgrades
 +
 On-demand upgrades of firmware and software are not available if the cluster version is ONTAP 9.9.1 or earlier.
++
+If you do _not_ have a Connector, you cannot make updates from your local machine, only from a server that can be accessed using BlueXP. 
 
 * Global search
 
