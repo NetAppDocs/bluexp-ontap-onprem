@@ -15,7 +15,13 @@ summary: Known limitations identify platforms, devices, or functions that are no
 [.lead]
 Known limitations identify platforms, devices, or functions that are not supported by this release of the product, or that do not interoperate correctly with it. Review these limitations carefully.
 
-A few System Manager features are not supported from BlueXP:
+== Unsupported clusters
+
+On-premises ONTAP clusters that are configured with SAML authentication are not supported with BlueXP.
+
+== System Manager limitations
+
+The following System Manager features are not supported from BlueXP:
 
 * Cluster setup
 +
