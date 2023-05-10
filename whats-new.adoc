@@ -20,7 +20,7 @@ Learn what's new with on-premises ONTAP cluster management in BlueXP.
 
 === Enable BlueXP backup and recovery
 
-Beginning with ONTAP 9.13.1, you can use System Manager (advanced view) to enable BlueXP backup and recovery if you discovered the cluster using a Connector. link:https://docs.netapp.com/us-en/ontap/task_cloud_backup_data_using_cbs.html[Learn more about enabling BlueXP backup and recovery^].
+Beginning with ONTAP 9.13.1, you can use System Manager (advanced view) to enable BlueXP backup and recovery if you discovered the cluster using a Connector. link:https://docs.netapp.com/us-en/ontap/task_cloud_backup_data_using_cbs.html[Learn more about enabling BlueXP backup and recovery^]
 
 === Upgrade ONTAP version image and hardware firmware
 
