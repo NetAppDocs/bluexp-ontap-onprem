@@ -13,7 +13,13 @@ summary: If you need to perform advanced management of an ONTAP on-premises clus
 :imagesdir: ./media/
 
 [.lead]
-If you discovered an on-prem ONTAP cluster using a Connector, you can create volumes from the Standard view, use System Manager from the Advanced view, and enable BlueXP data services.
+If you discovered an on-premises ONTAP cluster using a Connector, you can create volumes from the Standard view, use System Manager from the Advanced view, and enable BlueXP data services.
+
+On the Canvas, the working environment icon for a cluster that you discovered with a Connector should look similar to the following:
+
+image:screenshot-connector-we.png[A screenshot of the working environment icon that appears on the Canvas]
+
+If a working environment was discovered directly, the working environment icon includes the word "Direct."
 
 == Create volumes from the Standard view
 
@@ -113,7 +119,7 @@ image:screenshot_template_creating_resource_ontap.png[A screenshot showing the p
 
 Then the new volume is added to the working environment.
 
-Additionally, if any secondary action is implemented in the template, for example, enabling Cloud Backup on the volume, that action is also performed.
+Additionally, if any secondary action is implemented in the template, for example, enabling BlueXP backup and recovery on the volume, that action is also performed.
 
 .After you finish
 
@@ -189,30 +195,36 @@ If you need help using System Manager with ONTAP, you can refer to https://docs.
 * https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html[Network management^]
 * https://docs.netapp.com/us-en/ontap/concept_dp_overview.html[Data protection^] 
 
-== Enable BlueXP data services
+== Enable BlueXP services
 
-Enable BlueXP data services on your working environments to replicate, back up, scan, and tier data.
+Enable BlueXP data services on your working environments to replicate data, back up data, tier data, and more.
 
-=== Replicate data
+Replicate data::
+Replicate data between Cloud Volumes ONTAP systems, Amazon FSx for ONTAP file systems, and ONTAP clusters. Choose a one-time data replication, which can help you move data to and from the cloud, or a recurring schedule, which can help with disaster recovery or long-term data retention.
++
+https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html[Replication documentation^]
 
-You can replicate data between Cloud Volumes ONTAP systems and ONTAP clusters by choosing a one-time data replication, which can help you move data to and from the cloud, or a recurring schedule, which can help with disaster recovery or long-term retention.
+Back up data::
+Back up data from your on-premises ONTAP system to low-cost object storage in the cloud.
++
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html[Backup and recovery documentation^]
 
-https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html[Learn how to replicate data^]
+Scan, map, and classify your data::
+Scan your corporate on-premises clusters to map and classify data, and to identify private information. This can help reduce your security and compliance risk, decrease storage costs, and assist with your data migration projects.
++
+https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html[Classification documentation^]
 
-=== Back up data
+Tier data to the cloud::
+Extend your data center to the cloud by automatically tiering inactive data from ONTAP clusters to object storage.
++
+https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html[Tiering documentation^]
 
-You can back up data from your on-premises ONTAP system to low-cost object storage in the cloud by using Cloud Backup. This service provides backup and restore capabilities for protection and long-term archive of your on-prem and cloud data.
+Maintain health, uptime, and performance::
+Implement suggested remediations to ONTAP clusters before an outage or failure occurs.
++
+https://docs.netapp.com/us-en/bluexp-operational-resiliency/index.html[Operational resiliency documentation^]
 
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html[Learn how to back up data to the cloud^]
-
-=== Scan, map, and classify your data
-
-Cloud Data Sense can scan your corporate on-premises clusters to map and classify data, and to identify private information. This can help reduce your security and compliance risk, decrease storage costs, and assist with your data migration projects.
-
-https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html[Learn how to scan, map, and classify your data^]
-
-=== Tier data to the cloud
-
-Extend your data center to the cloud by automatically tiering inactive data from ONTAP clusters to object storage using Cloud Tiering.
-
-https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html[Learn how to tier data to the cloud^]
+Identify clusters with low capacity::
+Identify clusters that are showing low capacity, review clusters for current and forecasted capacity, and more.
++
+https://docs.netapp.com/us-en/bluexp-economic-efficiency/index.html[Economic efficiency documentation^]

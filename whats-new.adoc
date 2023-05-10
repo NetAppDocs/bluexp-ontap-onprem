@@ -13,20 +13,38 @@ summary: Learn what's new with on-premises ONTAP cluster management in BlueXP.
 :imagesdir: ./media/
 
 [.lead]
-Learn what's new with on-premises ONTAP cluster management in BlueXP (formerly Cloud Manager).
+Learn what's new with on-premises ONTAP cluster management in BlueXP.
 
 // tag::whats-new[]
 == 4 May 2023
 
 === Enable Cloud Backup
 
-Beginning with ONTAP 9.13.1, you can use System Manager (advanced view) to enable Cloud Backup if you discovered the cluster using a Connector. link:https://docs.netapp.com/us-en/ontap/task_cloud_backup_data_using_cbs.html[Learn more about enabling Cloud Backup].
+Beginning with ONTAP 9.13.1, you can use System Manager (advanced view) to enable BlueXP backup and recovery if you discovered the cluster using a Connector. link:https://docs.netapp.com/us-en/ontap/task_cloud_backup_data_using_cbs.html[Learn more about enabling BlueXP backup and recovery^].
 
 === Upgrade ONTAP version image and hardware firmware
 
-Beginning with ONTAP 9.10.1, you can use System Manager (advanced view) to upgrade the ONTAP version image and hardware firmware. You can choose to receive automatic upgrades to stay up to date, or you can make manual updates from your local machine or a server that can be accessed using BlueXP. link:https://docs.netapp.com/us-en/ontap/task_admin_update_firmware.html#prepare-for-firmware-update[Learn more about upgrading ONTAP and firmware.]
+Beginning with ONTAP 9.10.1, you can use System Manager (advanced view) to upgrade the ONTAP version image and hardware firmware. You can choose to receive automatic upgrades to stay up to date, or you can make manual updates from your local machine or a server that can be accessed using BlueXP. link:https://docs.netapp.com/us-en/ontap/task_admin_update_firmware.html#prepare-for-firmware-update[Learn more about upgrading ONTAP and firmware^]
 
 NOTE: If you do _not_ have a Connector, you cannot make updates from your local machine, only from a server that can be accessed using BlueXP. 
+
+== 3 April 2023
+
+=== Single discovery option from the BlueXP console
+
+When you discover an on-prem ONTAP cluster from the BlueXP console, you'll now see a single option:
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-discover-on-prem-ontap.png[A screenshot that shows the Discover on-premises ONTAP option available when creating a working environment]
+
+Previously, there were separate flows for direct discovery and for discovery with a Connector. Both of those options are still available, but merged into a single flow.
+
+When you start the discovery process, BlueXP discovers the cluster as follows:
+
+* If you have an active Connector that has a connection to your ONTAP cluster, BlueXP will use that Connector to discover and manage the cluster.
+
+* If you don't have a Connector or if your Connector doesn't have a connection to the ONTAP cluster, then BlueXP will automatically use the direct discovery and management option.
+
+https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html[Learn more about the discovery and management options].
 
 == 1 January 2023
 
@@ -35,6 +53,7 @@ NOTE: If you do _not_ have a Connector, you cannot make updates from your local 
 When you open an on-premises ONTAP working environment that was discovered directly without using a Connector, you now have the option to save your ONTAP cluster credentials so that you don't need to enter them each time that you open the working environment.
 
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-manage-ontap-direct.html[Learn more about this option.]
+// end::whats-new[]
 
 == 4 December 2022
 
@@ -62,7 +81,7 @@ The following changes were introduced with the 3.9.22 release of the Connector.
 
 We've introduced a new Overview page to provide key details about an on-premises ONTAP cluster. For example, you can now view details like storage efficiency, capacity distribution, and system information.
 
-You can also view details about integration with other NetApp cloud services that enable data tiering, data replication, and backups.
+You can also view details about integration with other BlueXP services that enable data tiering, data replication, and backups.
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-overview.png[A screenshot that shows the Overview page for an on-prem ONTAP cluster.]
 
@@ -71,7 +90,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/ma
 We redesigned the Volumes page to provide a summary of the volumes on a cluster. The summary shows you the total number of volumes, the amount of provisioned capacity, used and reserved capacity, and the amount of tiered data.
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-volumes.png[A screenshot that shows the Volumes page for an on-prem ONTAP cluster.]
-// end::whats-new[]
 
 == 7 June 2022
 
@@ -83,7 +101,8 @@ If you need to perform advanced management of an ONTAP on-premises cluster, you 
 
 This Advanced View is available as a Preview with on-premises ONTAP clusters running 9.10.0 or later. We plan to refine this experience and add enhancements in upcoming releases. Please send us feedback by using the in-product chat.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-administer-advanced-view.html[Learn more about the Advanced View].
+* link:task-manage-ontap-direct.html[Learn how to manage clusters discovered directly]
+* link:task-manage-ontap-connector.html[Learn how to manage clusters discovered with a Connector]
 
 == 27 February 2022
 
@@ -91,28 +110,10 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-administer-advance
 
 Now you can view an inventory of your on-premises ONTAP clusters along with their hardware and service contracts expiration dates. Additional details about the clusters are also available.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html#viewing-cluster-information-and-contract-details[See how to view this important on-prem cluster information]. You'll need to have a NetApp Support Site account (NSS) for the clusters, and the NSS credentials will need to be attached to your Cloud Manager account.
+https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-view-cluster-info.html[Learn how to view this important on-prem cluster information]. You'll need to have a NetApp Support Site account (NSS) for the clusters, and the NSS credentials will need to be attached to your Cloud Manager account.
 
 == 11 January 2022
 
 === Tags that you add to volumes on on-premises ONTAP clusters can be use with the Tagging service
 
 Tags that you add to a volume are now associated with the tagging feature of the Application Templates service, which can help you organize and simplify the management of your resources.
-
-== 28 November 2021
-
-=== The "Create Volume" wizard for on-premises ONTAP clusters has been simplified
-
-We redesigned the "Create Volume" wizard for ease of use and you can now choose a custom export policy.
-
-== 8 March 2021
-
-=== On-premises ONTAP cluster information available in the Active IQ service
-
-* When Active IQ displays the list of your on-premises clusters (based on your NSS account), you can click a button to link:task-discovering-ontap.html#discovering-clusters-from-the-discovery-page[discover the cluster^] and add it to the Cloud Manager Canvas. This makes it easier to manage all your storage systems from Cloud Manager.
-
-* When Active IQ determines that one or more clusters require firmware updates, you can click a button to link:task-managing-ontap.html#downloading-new-disk-and-shelf-firmware[download the Ansible playbook and upgrade the cluster firmware^].
-
-* A new link:task-managing-ontap.html#viewing-on-prem-workloads-that-are-candidates-for-the-cloud[Cloud-Ready Workloads tab^] provides a list of the workloads or volumes that we have identified as ideal to move to the cloud from your on-premises ONTAP clusters. Moving some of these volumes could reduce your costs and improve performance and resiliency.
-+
-See link:https://www.netapp.com/knowledge-center/what-is-lift-and-shift[What is Lift and Shift?]
