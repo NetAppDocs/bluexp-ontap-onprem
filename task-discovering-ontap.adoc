@@ -48,7 +48,7 @@ Before you discover your on-prem ONTAP cluster, ensure that you've met the follo
 
 * You should have gotten started with BlueXP, which includes logging in and setting up an account.
 +
-https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html[Learn how to get started with BlueXP^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-overview.html[Learn how to get started with BlueXP^]
 
 * You need the cluster management IP address and the password for the admin user account.
 
@@ -64,9 +64,9 @@ The default "mgmt" firewall policy allows inbound HTTPS access from all IP addre
 +
 If you want to tier cold data to the cloud, then you should review requirements for the Connector based on where you plan to tier cold data.
 +
-** https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn about Connectors^]
-** https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html[Switching between Connectors^]
-** https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html[Learn about BlueXP tiering^]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[Learn about Connectors^]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html[Switching between Connectors^]
+** https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html[Learn about BlueXP tiering^]
 
 * The Connector host must allow outbound HTTPS access through port 443.
 +
