@@ -37,8 +37,8 @@ With the direct discovery option, you're prompted to log in with your ONTAP cred
 + 
 The cluster version must be 9.13.1 to enable BlueXP backup and recovery from System Manager.
 +
-If you did _not_ discover a cluster using a Connector, then you can't use System Manager (advanced view) to enable backup and recovery. However, you can enable backup and recovery on an on-premises cluster directly from BlueXP. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html[Learn how to get started^]
-
+If you did _not_ discover a cluster using a Connector, then you can't use System Manager (advanced view) to enable backup and recovery. However, you can enable backup and recovery on an on-premises cluster directly from BlueXP. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html[Learn how to get started^]
+ 
 * On-demand upgrades
 +
 On-demand upgrades of firmware and software are not available if the cluster version is ONTAP 9.9.1 or earlier.
