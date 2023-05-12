@@ -44,7 +44,7 @@ sidebar:
       url: /legal-notices.html
 product-family:
   name: BlueXP
-  repo: bluexp-family
+  repo: cloud-manager-family
   sidebar_label: All BlueXP documentation
 homepage:
   tiles:
