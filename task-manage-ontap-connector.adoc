@@ -202,22 +202,22 @@ Enable BlueXP data services on your working environments to replicate data, back
 Replicate data::
 Replicate data between Cloud Volumes ONTAP systems, Amazon FSx for ONTAP file systems, and ONTAP clusters. Choose a one-time data replication, which can help you move data to and from the cloud, or a recurring schedule, which can help with disaster recovery or long-term data retention.
 +
-https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html[Replication documentation^]
+https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html[Replication documentation^]
 
 Back up data::
 Back up data from your on-premises ONTAP system to low-cost object storage in the cloud.
 +
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html[Backup and recovery documentation^]
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html[Backup and recovery documentation^]
 
 Scan, map, and classify your data::
 Scan your corporate on-premises clusters to map and classify data, and to identify private information. This can help reduce your security and compliance risk, decrease storage costs, and assist with your data migration projects.
 +
-https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html[Classification documentation^]
+https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html[Classification documentation^]
 
 Tier data to the cloud::
 Extend your data center to the cloud by automatically tiering inactive data from ONTAP clusters to object storage.
 +
-https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html[Tiering documentation^]
+https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html[Tiering documentation^]
 
 Maintain health, uptime, and performance::
 Implement suggested remediations to ONTAP clusters before an outage or failure occurs.
