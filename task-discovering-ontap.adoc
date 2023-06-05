@@ -105,6 +105,8 @@ Discover your on-prem ONTAP clusters from the Canvas in BlueXP. When you start t
 If you select this option, you won't need to re-enter the credentials each time that you open the working environment. These credentials are associated with your BlueXP user only. They aren't saved for use by anyone else in your account.
 
 . Select *Discover*.
++
+If you don't have a Connector and the IP address isn't reachable from BlueXP, then you'll be prompted to create a Connector.
 
 .Result
 
