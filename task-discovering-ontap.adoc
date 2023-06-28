@@ -56,7 +56,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html[Learn how
 +
 The default "mgmt" firewall policy allows inbound HTTPS access from all IP addresses. If you modified this default policy, or if you created your own firewall policy, you must associate the HTTPS protocol with that policy and enable access from the Connector host.
 
-=== Requirements for Connector discovery and management
+=== Requirements for Connector discovery
 
 * The on-premises cluster must be running ONTAP 8.3 or later.
 
@@ -72,7 +72,7 @@ If you want to tier cold data to the cloud, then you should review requirements 
 +
 If the Connector is in the cloud, all outbound communication is allowed by the predefined security group.
 
-=== Requirements for direct discovery and management
+=== Requirements for direct discovery
 
 * The on-premises cluster must be running ONTAP 9.12.1 or later.
 
@@ -82,7 +82,7 @@ If the Connector is in the cloud, all outbound communication is allowed by the p
 
 * The computer that you're using to access the BlueXP console must have a network connection to the on-prem ONTAP cluster, similar to how you would provide connections to other resources in your private network.
 
-== Add an on-premises ONTAP working environment
+== Discover a cluster
 
 Discover your on-prem ONTAP clusters from the Canvas in BlueXP. When you start the discovery process, BlueXP discovers a cluster as follows:
 
@@ -96,15 +96,15 @@ You can initiate the discovery process in one of two ways:
 
 * From *Canvas > My estate* by selecting a cluster that BlueXP pre-discovered based on the ONTAP clusters associated with your login email and your BlueXP account.
 
-=== Add a working environment manually
+=== Discover a cluster manually
 
-Add an on-premises ONTAP cluster to BlueXP by entering the cluster management IP address and the password for the admin user account.
+Discover an on-premises ONTAP cluster in BlueXP by entering the cluster management IP address and the password for the admin user account.
 
 .Steps
 
 . From the navigation menu, select *Storage > Canvas*.
 
-. On the Canvas page, click *Add Working Environment* and select *On-Premises*.
+. On the Canvas page, select *Add Working Environment > On-Premises*.
 
 . Next to On-Premises ONTAP, select *Discover*.
 
@@ -126,9 +126,9 @@ BlueXP discovers the cluster and adds it as a working environment on the Canvas.
 
 * link:task-manage-ontap-connector.html[Learn how to manage clusters discovered with a Connector]
 
-=== Add a pre-discovered working environment
+=== Discover a pre-discovered cluster
 
-BlueXP automatically discovers information about the ONTAP clusters that are associated with the email address for your BlueXP login and displays them on the *My estate* page as undiscovered clusters. You can view the list and select one cluster at a time to create a working environment.
+BlueXP automatically discovers information about the ONTAP clusters that are associated with the email address for your BlueXP login and displays them on the *My estate* page as undiscovered clusters. You can view the list of undiscovered clusters and discover them one at a time.
 
 The clusters associated with your email address must also be associated with the currently selected BlueXP account.
 
