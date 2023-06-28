@@ -84,7 +84,7 @@ If the Connector is in the cloud, all outbound communication is allowed by the p
 
 == Discover a cluster
 
-Discover your on-prem ONTAP clusters from the Canvas in BlueXP manually or from the My estate page. 
+Discover your on-prem ONTAP clusters from the Canvas by manually providing details about the cluster or by selecting a pre-discovered cluster from the My estate page. 
 
 .About this task
 
