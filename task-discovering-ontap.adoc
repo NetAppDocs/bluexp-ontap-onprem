@@ -17,20 +17,20 @@ Discover on-premises ONTAP clusters from BlueXP so that you can start managing v
 
 == Discovery and management options
 
-BlueXP provides two ways to discover and manage your on-prem ONTAP clusters:
+BlueXP provides two discovery and management options for on-prem ONTAP clusters:
 
-Discovery through a Connector:: 
+Discovery through a Connector::
 This option enables you to manage clusters running ONTAP 8.3 and later by using the following features:
 
 * The Standard view, which provides basic volume operations
 * The Advanced view, which provides management through System Manager (supported with ONTAP 9.10.0 and later)
-* Integration with BlueXP services, which provide data replication, back up and recovery, data classification, and data tiering
+* Integration with BlueXP services that provide data replication, back up and recovery, data classification, and data tiering
 
 +
 This option requires a Connector, which you can install in a cloud provider or on your premises.
 
 Direct discovery::
-This option enables you to manage clusters running ONTAP 9.12.1 and later by using System Manager. No other management options are available. You can't use the Standard view and you can't enable data services.
+This option enables you to manage clusters running ONTAP 9.12.1 and later by using System Manager. No other management options are available. You can't use the Standard view and you can't enable BlueXP services.
 +
 This option doesn't require a Connector.
 +
@@ -42,7 +42,7 @@ If you decide to use the other discovery option at a later time, you will need t
 
 == Requirements
 
-Before you discover your on-prem ONTAP cluster, ensure that you've met the following requirements.
+Before you discover your on-prem ONTAP clusters, ensure that you've met the following requirements.
 
 === General requirements
 
@@ -65,7 +65,7 @@ The default "mgmt" firewall policy allows inbound HTTPS access from all IP addre
 If you want to tier cold data to the cloud, then you should review requirements for the Connector based on where you plan to tier cold data.
 +
 ** https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn about Connectors^]
-** https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html[Switching between Connectors^]
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html[Learn how to switch between multiple Connectors^]
 ** https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html[Learn about BlueXP tiering^]
 
 * The Connector host must allow outbound HTTPS access through port 443.
@@ -82,13 +82,23 @@ If the Connector is in the cloud, all outbound communication is allowed by the p
 
 * The computer that you're using to access the BlueXP console must have a network connection to the on-prem ONTAP cluster, similar to how you would provide connections to other resources in your private network.
 
-== Discover clusters
+== Add an on-premises ONTAP working environment
 
-Discover your on-prem ONTAP clusters from the Canvas in BlueXP. When you start the discovery process, BlueXP discovers the cluster as follows:
+Discover your on-prem ONTAP clusters from the Canvas in BlueXP. When you start the discovery process, BlueXP discovers a cluster as follows:
 
-* If you have an active Connector that has a connection to your ONTAP cluster, then BlueXP will use that Connector to discover and manage the cluster.
+* If you have an active Connector that has a connection to an ONTAP cluster, then BlueXP will use that Connector to discover and manage the cluster.
 
 * If you don't have a Connector or if your Connector doesn't have a connection to the ONTAP cluster, then BlueXP will automatically use the direct discovery and management option.
+
+You can initiate the discovery process in one of two ways:
+
+* From *Canvas > My Working Environments* by manually adding details about the on-premises ONTAP cluster.
+
+* From *Canvas > My estate* by selecting a cluster that BlueXP pre-discovered based on the ONTAP clusters associated with your login email and your BlueXP account.
+
+=== Add a working environment manually
+
+Add an on-premises ONTAP cluster to BlueXP by entering the cluster management IP address and the password for the admin user account.
 
 .Steps
 
@@ -103,6 +113,40 @@ Discover your on-prem ONTAP clusters from the Canvas in BlueXP. When you start t
 . If you're discovering the cluster directly (without a Connector), you can select *Save the credentials*.
 +
 If you select this option, you won't need to re-enter the credentials each time that you open the working environment. These credentials are associated with your BlueXP user only. They aren't saved for use by anyone else in your account.
+
+. Select *Discover*.
++
+If you don't have a Connector and the IP address isn't reachable from BlueXP, then you'll be prompted to create a Connector.
+
+.Result
+
+BlueXP discovers the cluster and adds it as a working environment on the Canvas. You can now start managing the cluster.
+
+* link:task-manage-ontap-direct.html[Learn how to manage clusters discovered directly]
+
+* link:task-manage-ontap-connector.html[Learn how to manage clusters discovered with a Connector]
+
+=== Add a pre-discovered working environment
+
+BlueXP automatically discovers information about the ONTAP clusters that are associated with the email address for your BlueXP login and displays them on the *My estate* page as undiscovered clusters. You can view the list and select one cluster at a time to create a working environment.
+
+The clusters associated with your email address must also be associated with the currently selected BlueXP account.
+
+.Steps
+
+. From the navigation menu, select *Storage > Canvas*.
+
+. Select *My estate*.
+
+. On the My estate page, select *Discover* for on-premises ONTAP.
++
+image:screenshot-my-estate-ontap.png[A screenshot of the My estate page that shows 12 undiscovered on-premises ONTAP clusters.]
+
+. Select a cluster and then select *Discover*.
++
+image:screenshot-my-estate-ontap-discover.png[A screenshot of the My estate page that shows 12 undiscovered on-premises ONTAP clusters.]
+
+. Enter the password for the admin user account.
 
 . Select *Discover*.
 +
