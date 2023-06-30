@@ -20,7 +20,7 @@ Learn what's new with on-premises ONTAP cluster management in BlueXP.
 
 === Cluster discovery from My estate
 
-You can now discovery on-premises ONTAP clusters from *Canvas > My estate* by selecting a cluster that BlueXP pre-discovered based on the ONTAP clusters that are associated with the email address for your BlueXP login.
+You can now discover on-premises ONTAP clusters from *Canvas > My estate* by selecting a cluster that BlueXP pre-discovered based on the ONTAP clusters that are associated with the email address for your BlueXP login.
 
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster[Learn how to discover clusters from the My estate page].
 
