@@ -92,7 +92,7 @@ Discover your on-prem ONTAP clusters from the Canvas by manually providing detai
 
 ** From *Canvas > My Working Environments* by manually adding details about the on-premises ONTAP cluster.
 
-** From *Canvas > My estate* by selecting a cluster that BlueXP pre-discovered based on the ONTAP clusters associated with your login email and your BlueXP account.
+** From *Canvas > My estate* by selecting a cluster that BlueXP pre-discovered based on the ONTAP clusters that are associated with the email address for your BlueXP login.
 
 * When you start the discovery process, BlueXP discovers a cluster as follows:
 
@@ -130,11 +130,23 @@ BlueXP discovers the cluster and adds it as a working environment on the Canvas.
 
 * link:task-manage-ontap-connector.html[Learn how to manage clusters discovered with a Connector]
 
-=== Discover a pre-discovered cluster
+=== Add a pre-discovered cluster
 
 BlueXP automatically discovers information about the ONTAP clusters that are associated with the email address for your BlueXP login and displays them on the *My estate* page as undiscovered clusters. You can view the list of undiscovered clusters and discover them one at a time.
 
-The clusters associated with your email address must also be associated with the currently selected BlueXP account.
+.About this task
+
+Note that following about the on-premises ONTAP clusters that appear on the My estate page:
+
+* The email address that you use to log in to BlueXP must be associated with a registered, full-level NetApp Support Site (NSS) account.
+
+** If you log in to BlueXP with your NetApp Support Site account and navigate to the My estate page, BlueXP uses your NSS account to find the clusters that are associated with that account.
+
+** If you log in to BlueXP with a cloud account and navigate to the My estate page, BlueXP prompts you to verify your email. If that email address is associated with a NetApp Support Site account, BlueXP uses that information to find the clusters that are associated with that account.
+
+* BlueXP shows the ONTAP clusters that have successfully sent AutoSupport messages to NetApp.
+
+* To refresh the inventory list, exit the My estate page, wait 5 minutes, and then go back to it.
 
 .Steps
 
