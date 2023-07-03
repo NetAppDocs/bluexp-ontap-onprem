@@ -16,6 +16,14 @@ summary: Learn what's new with on-premises ONTAP cluster management in BlueXP.
 Learn what's new with on-premises ONTAP cluster management in BlueXP.
 
 // tag::whats-new[]
+== 2 July 2023
+
+=== Cluster discovery from My estate
+
+You can now discover on-premises ONTAP clusters from *Canvas > My estate* by selecting a cluster that BlueXP pre-discovered based on the ONTAP clusters that are associated with the email address for your BlueXP login.
+
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster[Learn how to discover clusters from the My estate page].
+
 == 4 May 2023
 
 === Enable BlueXP backup and recovery
@@ -45,6 +53,7 @@ When you start the discovery process, BlueXP discovers the cluster as follows:
 * If you don't have a Connector or if your Connector doesn't have a connection to the ONTAP cluster, then BlueXP will automatically use the direct discovery and management option.
 
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Learn more about the discovery and management options].
+// end::whats-new[]
 
 == 1 January 2023
 
@@ -53,7 +62,6 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Le
 When you open an on-premises ONTAP working environment that was discovered directly without using a Connector, you now have the option to save your ONTAP cluster credentials so that you don't need to enter them each time that you open the working environment.
 
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-manage-ontap-direct.html[Learn more about this option.]
-// end::whats-new[]
 
 == 4 December 2022
 
