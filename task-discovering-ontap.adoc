@@ -142,7 +142,7 @@ Note the following about the on-premises ONTAP clusters that appear on the My es
 
 ** If you log in to BlueXP with your NSS account and navigate to the My estate page, BlueXP uses that NSS account to find the clusters that are associated with the account.
 
-** If you log in to BlueXP with a cloud account and navigate to the My estate page, BlueXP prompts you to verify your email. If that email address is associated with an NSS account, BlueXP uses that information to find the clusters that are associated with the account.
+** If you log in to BlueXP with a cloud account or a federated connection and you navigate to the My estate page, BlueXP prompts you to verify your email. If that email address is associated with an NSS account, BlueXP uses that information to find the clusters that are associated with the account.
 
 * BlueXP only shows the ONTAP clusters that have successfully sent AutoSupport messages to NetApp.
 
