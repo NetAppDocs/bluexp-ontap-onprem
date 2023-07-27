@@ -20,7 +20,7 @@ Learn what's new with on-premises ONTAP cluster management in BlueXP.
 
 === Create FlexGroup volumes
 
-For clusters that you're managing with a Connector, you can now create FlexGroup volumes using the BlueXP API.
+If you're managing a cluster with a Connector, you can now create FlexGroup volumes using the BlueXP API.
 
 * https://docs.netapp.com/us-en/bluexp-automation/cm/wf_flexgroup_ontap_create_vol.html[Learn how to create a FlexGroup volume^]
 * https://docs.netapp.com/us-en/ontap/flexgroup/definition-concept.html[Learn what a FlexGroup volume is^]

@@ -21,9 +21,9 @@ image:screenshot-connector-we.png[A screenshot of the working environment icon t
 
 If a working environment was discovered directly, the working environment icon includes the word "Direct."
 
-== Create volumes from the Standard view
+== Create FlexVol volumes from the Standard view
 
-After you discover your on-prem ONTAP cluster from BlueXP using a Connector, you can open the working environment to provision and manage storage.
+After you discover your on-prem ONTAP cluster from BlueXP using a Connector, you can open the working environment to provision and manage FlexVol volumes.
 
 === Create volumes
 
