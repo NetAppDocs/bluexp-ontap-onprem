@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-manage-ontap-connector.html
-keywords: system manager, advanced view, access system manager, load system manager, use system manager
+keywords: system manager, advanced view, access system manager, load system manager, use system manager, flexgroup, flexgroup volumes, create flexgroup volume
 summary: If you need to perform advanced management of an ONTAP on-premises cluster, you can do so using ONTAP System Manager, which is a management interface that's provided with an ONTAP system. We have included the System Manager interface directly inside BlueXP so that you don't need to leave BlueXP for advanced management.
 ---
 
@@ -35,9 +35,9 @@ A BlueXP feature called "templates" enables you to create volumes that are optim
 
 . From the navigation menu, select *Storage > Canvas*.
 
-. On the Canvas page, double-click the name of the on-prem ONTAP cluster on which you want to provision volumes.
+. On the Canvas page, select the on-prem ONTAP cluster on which you want to provision volumes.
 
-. Click *Volumes > Add Volume*.
+. Select *Volumes > Add Volume*.
 
 . Follow the steps in the wizard to create the volume.
 
@@ -75,7 +75,7 @@ The following list describes fields for which you might need guidance:
 
 .. *Usage Profile*: Choose whether to enable or disable storage efficiency features on the volume in order to reduce the total amount of storage that you need.
 
-.. *Review*: Review details about the volume and then click *Add*.
+.. *Review*: Review details about the volume and then select *Add*.
 
 === Create volumes from templates
 
@@ -87,13 +87,13 @@ NOTE: You can only create NFS or CIFS volumes when using templates.
 
 .Steps
 
-. On the Canvas page, click the name of the on-premises ONTAP system on which you want to provision a volume.
+. On the Canvas page, select the on-prem ONTAP cluster on which you want to provision volumes.
 
-. Click image:screenshot_gallery_options.gif[An icon with three dots.] > *Add Volume From Template*.
+. Select image:screenshot_gallery_options.gif[An icon with three dots.] > *Add Volume From Template*.
 +
 image:screenshot_template_add_vol_ontap.png[A screenshot showing how to add a new volume from a template.]
 
-. In the _Select Template_ page, select the template that you want to use to create the volume and click *Next*.
+. In the _Select Template_ page, select the template that you want to use to create the volume and select *Next*.
 +
 image:screenshot_select_template_ontap.png[A screenshot of the available application templates.]
 +
@@ -101,7 +101,7 @@ The _Define Parameters_ page is displayed.
 +
 image:screenshot_define_ontap_vol_from_template.png[A screenshot showing a blank template that you need to fill in to create a volume.]
 +
-*Note:* You can click the checkbox *Show read-only parameters* to show all the fields that have been locked by the template if you want to see the values for those parameters. By default these predefined fields are hidden and only the fields you need to complete are shown.
+*Note:* You can select the checkbox *Show read-only parameters* to show all the fields that have been locked by the template if you want to see the values for those parameters. By default these predefined fields are hidden and only the fields you need to complete are shown.
 
 . In the _Context_ area, the Working Environment is filled in with the name of the working environment you started with. You need to select the *Storage VM* and *Aggregate* where the volume will be created.
 
@@ -109,7 +109,7 @@ image:screenshot_define_ontap_vol_from_template.png[A screenshot showing a blank
 +
 <<Create volumes,Learn about the parameters that you need to create the volume>>.
 
-. Click *Run Template* after you have defined all the parameters needed for this volume.
+. Select *Run Template* after you have defined all the parameters needed for this volume.
 
 .Result
 
@@ -124,6 +124,13 @@ Additionally, if any secondary action is implemented in the template, for exampl
 .After you finish
 
 If you provisioned a CIFS share, give users or groups permissions to the files and folders and verify that those users can access the share and create a file.
+
+== Create FlexGroup volumes
+
+You can use the BlueXP API to create FlexGroup volumes. A FlexGroup volume is a scale-out volume that provides high performance along with automatic load distribution.
+
+* https://docs.netapp.com/us-en/bluexp-automation/cm/wf_flexgroup_ontap_create_vol.html[Learn how to create a FlexGroup volume using the API^]
+* https://docs.netapp.com/us-en/ontap/flexgroup/definition-concept.html[Learn what a FlexGroup volume is^]
 
 == Administer ONTAP using the Advanced View
 
@@ -169,21 +176,21 @@ link:reference-limitations.html[Review the list of limitations].
 
 === Use the Advanced View (System Manager)
 
-Open an on-premises ONTAP working environment and click the Advanced View option.
+Open an on-premises ONTAP working environment and select the Advanced View option.
 
 .Steps
 
-. On the Canvas page, double-click the name of an on-premises ONTAP working environment.
+. On the Canvas page, select the on-prem ONTAP cluster on which you want to provision volumes.
 
-. In the top-right, click *Switch to Advanced View*.
+. In the top-right, select *Switch to Advanced View*.
 +
 image:screenshot-advanced-view.png[A screenshot of an on-prem ONTAP working environment that shows the Switch to Advanced View option.]
 
-. If the confirmation message appears, read through it and click *Close*.
+. If the confirmation message appears, read through it and select *Close*.
 
 . Use System Manager to manage ONTAP.
 
-. If needed, click *Switch to Standard View* to return to standard management through BlueXP.
+. If needed, select *Switch to Standard View* to return to standard management through BlueXP.
 +
 image:screenshot-standard-view.png[A screenshot of an on-prem ONTAP working environment that shows the Switch to Standard View option.]
 

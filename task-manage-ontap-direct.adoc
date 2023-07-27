@@ -27,7 +27,7 @@ link:reference-limitations.html[Review the list of limitations].
 
 .Steps
 
-. On the Canvas page, double-click the name of an on-premises ONTAP working environment.
+. On the Canvas page, select the on-premises ONTAP working environment.
 +
 The working environment icon identifies clusters that were discovered directly:
 +

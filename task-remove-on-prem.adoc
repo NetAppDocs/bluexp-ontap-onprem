@@ -19,10 +19,10 @@ Removing the working environment doesn't affect the ONTAP cluster. You can redis
 
 .Steps
 
-. On the Canvas page, double-click the name of the on-premises ONTAP working environment.
+. On the Canvas page, select the on-premises ONTAP working environment.
 
-. Click the menu icon and select *Remove from workspace*.
+. Select the menu icon and select *Remove from workspace*.
 +
 image:screenshot_remove_onprem.png[A screenshot that shows the menu in the top-right of the page and the Remove option.]
 
-. Click *Remove* to confirm.
+. Select *Remove* to confirm.
