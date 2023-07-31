@@ -16,6 +16,15 @@ summary: Learn what's new with on-premises ONTAP cluster management in BlueXP.
 Learn what's new with on-premises ONTAP cluster management in BlueXP.
 
 // tag::whats-new[]
+== 30 July 2023
+
+=== Create FlexGroup volumes
+
+If you're managing a cluster with a Connector, you can now create FlexGroup volumes using the BlueXP API.
+
+* https://docs.netapp.com/us-en/bluexp-automation/cm/wf_flexgroup_ontap_create_vol.html[Learn how to create a FlexGroup volume^]
+* https://docs.netapp.com/us-en/ontap/flexgroup/definition-concept.html[Learn what a FlexGroup volume is^]
+
 == 2 July 2023
 
 === Cluster discovery from My estate
@@ -34,7 +43,9 @@ Beginning with ONTAP 9.13.1, you can use System Manager (advanced view) to enabl
 
 Beginning with ONTAP 9.10.1, you can use System Manager (advanced view) to upgrade the ONTAP version image and hardware firmware. You can choose to receive automatic upgrades to stay up to date, or you can make manual updates from your local machine or a server that can be accessed using BlueXP. link:https://docs.netapp.com/us-en/ontap/task_admin_update_firmware.html#prepare-for-firmware-update[Learn more about upgrading ONTAP and firmware^]
 
-NOTE: If you do _not_ have a Connector, you cannot make updates from your local machine, only from a server that can be accessed using BlueXP. 
+NOTE: If you do _not_ have a Connector, you cannot make updates from your local machine, only from a server that can be accessed using BlueXP.
+
+// end::whats-new[]
 
 == 3 April 2023
 
@@ -53,7 +64,6 @@ When you start the discovery process, BlueXP discovers the cluster as follows:
 * If you don't have a Connector or if your Connector doesn't have a connection to the ONTAP cluster, then BlueXP will automatically use the direct discovery and management option.
 
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Learn more about the discovery and management options].
-// end::whats-new[]
 
 == 1 January 2023
 
