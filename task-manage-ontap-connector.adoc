@@ -129,7 +129,7 @@ If you provisioned a CIFS share, give users or groups permissions to the files a
 
 You can use the BlueXP API to create FlexGroup volumes. A FlexGroup volume is a scale-out volume that provides high performance along with automatic load distribution.
 
-* https://docs.netapp.com/us-en/bluexp-automation/cm/wf_flexgroup_ontap_create_vol.html[Learn how to create a FlexGroup volume using the API^]
+* https://docs.netapp.com/us-en/bluexp-automation/cm/wf_onprem_flexgroup_ontap_create_vol.html[Learn how to create a FlexGroup volume using the API^]
 * https://docs.netapp.com/us-en/ontap/flexgroup/definition-concept.html[Learn what a FlexGroup volume is^]
 
 == Administer ONTAP using the Advanced View
