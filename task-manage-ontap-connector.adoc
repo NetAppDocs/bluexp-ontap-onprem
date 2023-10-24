@@ -5,7 +5,7 @@ keywords: system manager, advanced view, access system manager, load system mana
 summary: If you need to perform advanced management of an ONTAP on-premises cluster, you can do so using ONTAP System Manager, which is a management interface that's provided with an ONTAP system. We have included the System Manager interface directly inside BlueXP so that you don't need to leave BlueXP for advanced management.
 ---
 
-= Manage on-prem ONTAP clusters that were discovered with a Connector
+= Manage clusters that were discovered with a Connector
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -121,7 +121,7 @@ Then the new volume is added to the working environment.
 
 Additionally, if any secondary action is implemented in the template, for example, enabling BlueXP backup and recovery on the volume, that action is also performed.
 
-.After you finish
+.What's next?
 
 If you provisioned a CIFS share, give users or groups permissions to the files and folders and verify that those users can access the share and create a file.
 
@@ -132,7 +132,7 @@ You can use the BlueXP API to create FlexGroup volumes. A FlexGroup volume is a 
 * https://docs.netapp.com/us-en/bluexp-automation/cm/wf_onprem_flexgroup_ontap_create_vol.html[Learn how to create a FlexGroup volume using the API^]
 * https://docs.netapp.com/us-en/ontap/flexgroup/definition-concept.html[Learn what a FlexGroup volume is^]
 
-== Administer ONTAP using the Advanced View
+== Administer ONTAP using the Advanced View (System Manager)
 
 If you need to perform advanced management of an on-premises ONTAP cluster, you can do so using ONTAP System Manager, which is a management interface that's provided with an ONTAP system. We have included the System Manager interface directly inside BlueXP so that you don't need to leave BlueXP for advanced management.
 
@@ -174,7 +174,7 @@ A few System Manager features are not supported with on-premises ONTAP clusters 
 
 link:reference-limitations.html[Review the list of limitations].
 
-=== Use the Advanced View (System Manager)
+=== Use the Advanced View
 
 Open an on-premises ONTAP working environment and select the Advanced View option.
 

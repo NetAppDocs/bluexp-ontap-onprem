@@ -5,7 +5,7 @@ keywords: direct discovery, direct, system manager, local, local discovery
 summary: If you discovered your on-prem ONTAP cluster directly without using a Connector, you can enter the working environment to manage the cluster by using System Manager.
 ---
 
-= Manage on-prem ONTAP clusters that were discovered directly
+= Manage clusters that were discovered directly
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -15,7 +15,7 @@ summary: If you discovered your on-prem ONTAP cluster directly without using a C
 [.lead]
 If you discovered your on-prem ONTAP cluster directly without using a Connector, you can open the working environment to manage the cluster by using System Manager.
 
-.Requirement
+.Before you begin
 
 The computer that you're using to access the BlueXP console must have a network connection to the on-prem ONTAP cluster, similar to how you would provide connections to other resources in your private network.
 

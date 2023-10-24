@@ -20,7 +20,7 @@ sidebar:
       entries:
         - title: Learn about on-prem ONTAP cluster management
           url: /concept-onprem-ontap.html
-        - title: Discover ONTAP clusters
+        - title: Discover on-premises ONTAP clusters
           url: /task-discovering-ontap.html
     - title: Manage on-prem ONTAP clusters
       entries:
@@ -30,7 +30,7 @@ sidebar:
           url : /task-manage-ontap-connector.html
         - title: View cluster info and contract details
           url: /task-view-cluster-info.html
-        - title: Optimize clusters using Digital Advisor
+        - title: Optimize clusters using BlueXP digital advisor
           url: /concept-aiq-digital-advisor.html
         - title: Remove an on-prem ONTAP working environment
           url: /task-remove-on-prem.html
