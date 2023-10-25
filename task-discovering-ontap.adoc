@@ -84,22 +84,17 @@ Requirements for direct discovery::
 
 == Step 3: Discover a cluster
 
-Discover your on-prem ONTAP clusters from the Canvas by manually providing details about the cluster or by selecting a pre-discovered cluster from the My estate page. 
+Discover your on-prem ONTAP clusters from the Canvas in one of two ways:
 
-.About this task
+* From *Canvas > My Working Environments* by manually adding details about the on-premises ONTAP cluster.
 
-* You can initiate the discovery process in one of two ways:
+* From *Canvas > My estate* by selecting a cluster that BlueXP pre-discovered based on the ONTAP clusters that are associated with the email address for your BlueXP login.
 
-** From *Canvas > My Working Environments* by manually adding details about the on-premises ONTAP cluster.
+When you start the discovery process, BlueXP discovers a cluster as follows:
 
-** From *Canvas > My estate* by selecting a cluster that BlueXP pre-discovered based on the ONTAP clusters that are associated with the email address for your BlueXP login.
+* If you have an active Connector that has a connection to an ONTAP cluster, then BlueXP will use that Connector to discover and manage the cluster.
 
-* When you start the discovery process, BlueXP discovers a cluster as follows:
-
-** If you have an active Connector that has a connection to an ONTAP cluster, then BlueXP will use that Connector to discover and manage the cluster.
-
-** If you don't have a Connector or if your Connector doesn't have a connection to the ONTAP cluster, then BlueXP will automatically use the direct discovery and management option.
-
+* If you don't have a Connector or if your Connector doesn't have a connection to the ONTAP cluster, then BlueXP will automatically use the direct discovery and management option.
 
 // start tabbed area
 
