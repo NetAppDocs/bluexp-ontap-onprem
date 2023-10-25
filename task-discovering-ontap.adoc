@@ -44,7 +44,7 @@ If you decide to use the other discovery option at a later time, you will need t
 
 Before you discover your on-prem ONTAP clusters, ensure that you've met the following requirements.
 
-=== General requirements
+General requirements::
 
 * You should have gotten started with BlueXP, which includes logging in and setting up an account.
 +
@@ -56,7 +56,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html[Learn how
 +
 The default "mgmt" firewall policy allows inbound HTTPS access from all IP addresses. If you modified this default policy, or if you created your own firewall policy, you must associate the HTTPS protocol with that policy and enable access from the Connector host.
 
-=== Requirements for Connector discovery
+Requirements for Connector discovery::
 
 * The on-premises cluster must be running ONTAP 8.3 or later.
 
@@ -72,7 +72,7 @@ If you want to tier cold data to the cloud, then you should review requirements 
 +
 If the Connector is in the cloud, all outbound communication is allowed by the predefined security group.
 
-=== Requirements for direct discovery
+Requirements for direct discovery::
 
 * The on-premises cluster must be running ONTAP 9.12.1 or later.
 
@@ -100,8 +100,14 @@ Discover your on-prem ONTAP clusters from the Canvas by manually providing detai
 
 ** If you don't have a Connector or if your Connector doesn't have a connection to the ONTAP cluster, then BlueXP will automatically use the direct discovery and management option.
 
-=== Discover a cluster manually
 
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.Discover a cluster manually
+--
 Discover an on-premises ONTAP cluster in BlueXP by entering the cluster management IP address and the password for the admin user account.
 
 .Steps
@@ -129,9 +135,10 @@ BlueXP discovers the cluster and adds it as a working environment on the Canvas.
 * link:task-manage-ontap-direct.html[Learn how to manage clusters discovered directly]
 
 * link:task-manage-ontap-connector.html[Learn how to manage clusters discovered with a Connector]
+--
 
-=== Add a pre-discovered cluster
-
+.Add a pre-discovered cluster
+--
 BlueXP automatically discovers information about the ONTAP clusters that are associated with the email address for your BlueXP login and displays them on the *My estate* page as undiscovered clusters. You can view the list of undiscovered clusters and add them one at a time.
 
 .About this task
@@ -175,3 +182,7 @@ BlueXP discovers the cluster and adds it as a working environment on the Canvas.
 * link:task-manage-ontap-direct.html[Learn how to manage clusters discovered directly]
 
 * link:task-manage-ontap-connector.html[Learn how to manage clusters discovered with a Connector]
+--
+
+====
+// end tabbed area
