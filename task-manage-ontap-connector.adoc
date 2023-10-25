@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-manage-ontap-connector.html
 keywords: system manager, advanced view, access system manager, load system manager, use system manager, flexgroup, flexgroup volumes, create flexgroup volume
-summary: If you need to perform advanced management of an ONTAP on-premises cluster, you can do so using ONTAP System Manager, which is a management interface that's provided with an ONTAP system. We have included the System Manager interface directly inside BlueXP so that you don't need to leave BlueXP for advanced management.
+summary: If you discovered an on-premises ONTAP cluster using a Connector, you can create volumes from the Standard view, use System Manager from the Advanced view, and enable BlueXP data services.
 ---
 
 = Manage clusters that were discovered with a Connector

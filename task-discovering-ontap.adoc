@@ -47,7 +47,6 @@ Before you discover your on-prem ONTAP clusters, ensure that you've met the foll
 General requirements::
 
 * You should have gotten started with BlueXP, which includes logging in and setting up an account.
-+
 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html[Learn how to get started with BlueXP^]
 
 * You need the cluster management IP address and the password for the admin user account.
