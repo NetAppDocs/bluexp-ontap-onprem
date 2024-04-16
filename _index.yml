@@ -1,0 +1,26 @@
+indexpage:
+  title: On-premises ONTAP cluster management using BlueXP
+  lead: Manage your NetApp AFF and FAS systems from BlueXP to provision storage, replicate data, and configure critical cloud-based data services.
+  summary: "Manage your NetApp AFF and FAS systems from BlueXP to provision storage, replicate data, and configure critical cloud-based data services."
+  keywords: BlueXP, ontap, discover onprem
+  tiles:
+    - title: Get started
+      links:
+        - title: Learn about on-prem ONTAP cluster management
+          url: concept-onprem-ontap.html
+        - title: Discover ONTAP clusters
+          url: task-discovering-ontap.html
+    - title: Manage on-prem ONTAP clusters
+      links:
+        - title: Manage clusters discovered directly
+          url: task-manage-ontap-direct.html
+        - title: Manage clusters discovered with a Connector
+          url: task-manage-ontap-connector.html
+    - title: Blogs & community
+      links:
+        - title: NetApp Community
+          url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+        - title: BlueXP blog
+          url: https://cloud.netapp.com/blog
+        - title: Cloud webinars
+          url: https://cloud.netapp.com/events
