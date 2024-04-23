@@ -16,7 +16,7 @@ summary: Learn what's new with on-premises ONTAP cluster management in BlueXP.
 Learn what's new with on-premises ONTAP cluster management in BlueXP.
 
 // tag::whats-new[]
-== 17 April 2024
+== 22 April 2024
 
 === Volume templates no longer supported
 
