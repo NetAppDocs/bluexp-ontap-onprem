@@ -16,6 +16,12 @@ summary: Learn what's new with on-premises ONTAP cluster management in BlueXP.
 Learn what's new with on-premises ONTAP cluster management in BlueXP.
 
 // tag::whats-new[]
+== 22 April 2024
+
+=== Volume templates no longer supported
+
+You can no longer create a volume from a template. This action was associated with the BlueXP remediation service, which is no longer available.
+
 == 30 July 2023
 
 === Create FlexGroup volumes
@@ -33,6 +39,8 @@ You can now discover on-premises ONTAP clusters from *Canvas > My estate* by sel
 
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster[Learn how to discover clusters from the My estate page].
 
+// end::whats-new[]
+
 == 4 May 2023
 
 === Enable BlueXP backup and recovery
@@ -44,8 +52,6 @@ Beginning with ONTAP 9.13.1, you can use System Manager (advanced view) to enabl
 Beginning with ONTAP 9.10.1, you can use System Manager (advanced view) to upgrade the ONTAP version image and hardware firmware. You can choose to receive automatic upgrades to stay up to date, or you can make manual updates from your local machine or a server that can be accessed using BlueXP. link:https://docs.netapp.com/us-en/ontap/task_admin_update_firmware.html#prepare-for-firmware-update[Learn more about upgrading ONTAP and firmware^]
 
 NOTE: If you do _not_ have a Connector, you cannot make updates from your local machine, only from a server that can be accessed using BlueXP.
-
-// end::whats-new[]
 
 == 3 April 2023
 
