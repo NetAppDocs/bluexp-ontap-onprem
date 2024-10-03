@@ -67,7 +67,7 @@ If you want to tier cold data to the cloud, then you should review requirements 
 ** https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html[Learn how to switch between multiple Connectors^]
 ** https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html[Learn about BlueXP tiering^]
 
-* The Connector host must allow outbound connections through port 443 (HTTPS) and the ONTAP cluster must allow inbound HTTP access through port 443.
+* The Connector host must allow outbound connections through port 443 (HTTPS) and the ONTAP cluster must allow inbound HTTP access through port 443 to the cluster management LIF.
 +
 If the Connector is in the cloud, all outbound communication is allowed by the predefined security group.
 
