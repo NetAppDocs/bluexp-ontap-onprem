@@ -116,7 +116,7 @@ Discover an on-premises ONTAP cluster in BlueXP by entering the cluster manageme
 
 . If you're discovering the cluster directly (without a Connector), you can select *Save the credentials*.
 +
-If you select this option, you won't need to re-enter the credentials each time that you open the working environment. These credentials are only associated with your BlueXP user login. They aren't saved for use by anyone else in the BlueXP account.
+If you select this option, you won't need to re-enter the credentials each time that you open the working environment. These credentials are only associated with your BlueXP user login. They aren't saved for use by anyone else in the BlueXP organization.
 
 . Select *Discover*.
 +
