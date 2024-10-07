@@ -132,9 +132,9 @@ Open an on-premises ONTAP working environment and select the Advanced View optio
 
 . On the Canvas page, select the on-prem ONTAP cluster on which you want to provision volumes.
 
-. In the top-right, select *Switch to Advanced View*.
+. From the right panel, under *Services*, find *System Manager* and select *Open*.
 +
-image:screenshot-advanced-view.png[A screenshot of an on-prem ONTAP working environment that shows the Switch to Advanced View option.]
+image:screenshot-advanced-view.png[A screenshot of the BlueXP canvas that shows the list of available services after selecting an on-premises ONTAP working environment.]
 
 . If the confirmation message appears, read through it and select *Close*.
 
