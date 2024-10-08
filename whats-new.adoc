@@ -15,31 +15,17 @@ summary: Learn what's new with on-premises ONTAP cluster management in BlueXP.
 [.lead]
 Learn what's new with on-premises ONTAP cluster management in BlueXP.
 
-// tag::whats-new[]
 == 7 October 2024
 
-=== Support for ASA r2 systems
-
-You can now discover NetApp ASA r2 systems in BlueXP. After you discover a NetApp ASA r2 system and open the working environment, you're brought directly to System Manager.
-
-No other management options are available with ASA r2 systems. You can't use the Standard view and you can't enable BlueXP services.
-
-https://docs.netapp.com/us-en/asa-r2/index.html[Learn more about ASA r2 systems^]
+include::_whatsnew/2024-10-07.adoc[]
 
 == 22 April 2024
 
-=== Volume templates no longer supported
-
-You can no longer create a volume from a template. This action was associated with the BlueXP remediation service, which is no longer available.
+include::_whatsnew/2024-04-22.adoc[]
 
 == 30 July 2023
 
-=== Create FlexGroup volumes
-
-If you're managing a cluster with a Connector, you can now create FlexGroup volumes using the BlueXP API.
-
-* https://docs.netapp.com/us-en/bluexp-automation/cm/wf_onprem_flexgroup_ontap_create_vol.html[Learn how to create a FlexGroup volume^]
-* https://docs.netapp.com/us-en/ontap/flexgroup/definition-concept.html[Learn what a FlexGroup volume is^]
+include::_whatsnew/2023-07-30.adoc[]
 
 == 2 July 2023
 
@@ -49,7 +35,6 @@ You can now discover on-premises ONTAP clusters from *Canvas > My estate* by sel
 
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster[Learn how to discover clusters from the My estate page].
 
-// end::whats-new[]
 
 == 4 May 2023
 
