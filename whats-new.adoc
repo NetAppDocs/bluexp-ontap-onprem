@@ -76,8 +76,6 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-manage-ontap-direct.html[
 
 == 4 December 2022
 
-The following changes were introduced with the 3.9.24 release of the Connector.
-
 === New way to discover on-premises ONTAP clusters
 
 You can now directly discover your on-premises ONTAP clusters without using a Connector. This option enables cluster management through System Manager only. You can't enable any BlueXP data services on this type of working environment.
@@ -94,8 +92,6 @@ BlueXP does not support creating FlexGroup volumes. You'll need to continue usin
 
 == 18 September 2022
 
-The following changes were introduced with the 3.9.22 release of the Connector.
-
 === New Overview page
 
 We've introduced a new Overview page to provide key details about an on-premises ONTAP cluster. For example, you can now view details like storage efficiency, capacity distribution, and system information.
@@ -111,8 +107,6 @@ We redesigned the Volumes page to provide a summary of the volumes on a cluster.
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-ontap-onprem/main/media/screenshot-volumes.png[A screenshot that shows the Volumes page for an on-prem ONTAP cluster.]
 
 == 7 June 2022
-
-The following change was introduced with the 3.9.19 release of the Connector.
 
 === New Advanced View
 
