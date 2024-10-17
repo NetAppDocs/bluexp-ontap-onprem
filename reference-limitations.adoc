@@ -15,10 +15,12 @@ summary: Known limitations identify platforms, devices, or functions that are no
 [.lead]
 Known limitations identify platforms, devices, or functions that are not supported by this release of the product, or that do not interoperate correctly with it. Review these limitations carefully.
 
-== ASA r2 systems
+== Limitations related to ASA r2 systems
 
-After you discover a NetApp ASA r2 system and open the working environment, you're brought directly to System Manager.
+* Discovery of ASA r2 systems is not supported when using BlueXP in private mode.
 
+* After you discover a NetApp ASA r2 system and open the working environment, you're brought directly to System Manager.
++
 No other management options are available with ASA r2 systems. You can't use the Standard view and you can't enable BlueXP services.
 
 https://docs.netapp.com/us-en/asa-r2/index.html[Learn more about ASA r2 systems^]
