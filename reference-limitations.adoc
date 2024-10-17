@@ -17,7 +17,7 @@ Known limitations identify platforms, devices, or functions that are not support
 
 == Limitations related to ASA r2 systems
 
-* Discovery of ASA r2 systems is not supported when using BlueXP in private mode.
+* You can discover NetApp ASA r2 systems in BlueXP when using BlueXP in standard mode or restricted mode. Discovery of ASA r2 systems is not supported when using BlueXP in private mode.
 
 * After you discover a NetApp ASA r2 system and open the working environment, you're brought directly to System Manager.
 +
