@@ -16,6 +16,10 @@ summary: Learn what's new with on-premises ONTAP cluster management in BlueXP.
 Learn what's new with on-premises ONTAP cluster management in BlueXP.
 
 // tag::whats-new[]
+== 26 November 2024
+
+include::_whatsnew/2024-11-26.adoc[]
+
 == 7 October 2024
 
 include::_whatsnew/2024-10-07.adoc[]
@@ -23,11 +27,11 @@ include::_whatsnew/2024-10-07.adoc[]
 == 22 April 2024
 
 include::_whatsnew/2024-04-22.adoc[]
+// end::whats-new[]
 
 == 30 July 2023
 
 include::_whatsnew/2023-07-30.adoc[]
-// end::whats-new[]
 
 == 2 July 2023
 
