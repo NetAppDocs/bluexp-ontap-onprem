@@ -26,12 +26,6 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-r
 
 The computer that you're using to access the BlueXP console must have a network connection to the on-prem ONTAP cluster, similar to how you would provide connections to other resources in your private network.
 
-[NOTE]
-=====
-*Supported roles:* Organization admin, Folder or project admin, or Storage admin
-
-link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles.^]
-=====
 
 .Limitations
 
