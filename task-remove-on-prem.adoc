@@ -15,6 +15,13 @@ summary: Remove an on-premises ONTAP working environment if you no longer want t
 [.lead]
 Remove an on-premises ONTAP working environment if you no longer want to manage it from BlueXP.
 
+[NOTE]
+=====
+*Supported roles:* Organization admin, Folder or project admin, or Storage admin
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles.]
+=====
+
 Removing the working environment doesn't affect the ONTAP cluster. You can rediscover it from BlueXP at any time.
 
 .Steps

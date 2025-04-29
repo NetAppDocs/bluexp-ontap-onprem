@@ -15,6 +15,13 @@ summary: Discover on-prem ONTAP clusters from BlueXP so that you can start manag
 [.lead]
 Discover on-premises ONTAP clusters from BlueXP so that you can start managing volumes and performing advanced management using ONTAP System Manager, which is available from BlueXP.
 
+[NOTE]
+=====
+*Supported roles:* Organization admin, Folder or project admin, or Storage admin
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles^.]
+=====
+
 == Step 1: Review discovery and management options
 
 BlueXP provides two discovery and management options for on-prem ONTAP clusters:
@@ -22,8 +29,8 @@ BlueXP provides two discovery and management options for on-prem ONTAP clusters:
 Discovery and management using a Connector::
 This option enables you to manage clusters running ONTAP 8.3 and later by using the following features:
 
-* The Standard view, which provides basic volume operations
-* The Advanced view, which provides management through System Manager (supported with ONTAP 9.10.0 and later)
+* Provides basic volume operations natively through the BlueXP interface
+* ONTAP System Manager (supported with ONTAP 9.10.0 and later), access System Manager for each respective cluster directly from BlueXP
 * Integration with BlueXP services that provide data replication, back up and recovery, data classification, and data tiering
 
 +
@@ -38,7 +45,7 @@ When you access System Manager on an on-premises ONTAP cluster running 9.12.1 or
 
 Once discovered, your clusters are available as a working environment on the BlueXP Canvas.
 
-If you decide to use the other discovery option at a later time, you will need to discover the on-prem cluster as a separate working environment on the Canvas. You then have the option to remove the other working environment.
+If you decide to add a Connector to your BlueXP deployment, you'll need to re-discover your on-prem cluster as a separate working environment on the Canvas. This will enable native BlueXP management and access to BlueXP data services. You then have the option to remove the other working environment.
 
 == Step 2: Set up your environment
 
@@ -46,8 +53,7 @@ Before you discover your on-prem ONTAP clusters, ensure that you've met the foll
 
 General requirements::
 
-* You should have gotten started with BlueXP, which includes logging in and setting up an account.
-https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html[Learn how to get started with BlueXP^]
+* You'll need to have one of the following BlueXP access roles: Org admin, Folder or project admin, or Storage admin.
 
 * You need the cluster management IP address and the password for the admin user account.
 
