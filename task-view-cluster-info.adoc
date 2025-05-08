@@ -17,7 +17,7 @@ The BlueXP digital wallet enables you to view contract details for each of your 
 
 [NOTE]
 =====
-*Supported roles:* Organization admin, Folder or project admin
+*Supported BlueXP roles:* Organization admin, Folder or project admin
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles.^]
 =====

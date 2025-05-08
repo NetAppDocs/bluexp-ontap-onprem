@@ -17,7 +17,7 @@ Discover on-premises ONTAP clusters from BlueXP so that you can start managing v
 
 [NOTE]
 =====
-*Supported roles:* Organization admin, Folder or project admin, or Storage admin
+*Supported BlueXP roles:* Organization admin, Folder or project admin, Storage admin, or System health specialist
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles^.]
 =====
@@ -34,7 +34,7 @@ This option enables you to manage clusters running ONTAP 8.3 and later by using 
 * Integration with BlueXP services that provide data replication, back up and recovery, data classification, and data tiering
 
 +
-This option requires a Connector, which you can install in a cloud provider or on your premises.
+This option requires a Connector, which you can install in a cloud provider or on your premises. You must have the Organization admin role to install a Connector.
 
 Direct discovery and management::
 This option enables you to manage clusters running ONTAP 9.12.1 and later by using System Manager. No other management options are available. You can't use the Standard view and you can't enable BlueXP services.

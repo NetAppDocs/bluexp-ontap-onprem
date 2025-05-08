@@ -17,7 +17,7 @@ If you discovered an on-premises ONTAP cluster using a Connector, you can create
 
 [NOTE]
 =====
-*Supported roles:* Organization admin, Folder or project admin, or Storage admin
+*Supported BlueXP roles:* Organization admin, Folder or project admin, Storage admin, or System health specialist
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles.]
 =====
