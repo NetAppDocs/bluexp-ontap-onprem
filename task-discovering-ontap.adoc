@@ -15,7 +15,7 @@ summary: Discover on-prem ONTAP clusters from BlueXP so that you can start manag
 [.lead]
 Discover on-premises ONTAP clusters from BlueXP so that you can start managing volumes and performing advanced management using ONTAP System Manager, which is available from BlueXP.
 
-.Required BlueXP roles:
+.Required BlueXP role:
 Organization admin, Folder or project admin, Storage admin, or System health specialist. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles.^]
 
 
