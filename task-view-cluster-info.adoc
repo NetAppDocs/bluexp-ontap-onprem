@@ -15,12 +15,7 @@ summary: The BlueXP digital wallet enables you to view contract details for each
 [.lead]
 The BlueXP digital wallet enables you to view contract details for each of your on-prem ONTAP clusters. If you haven't discovered a cluster in BlueXP yet, you can also do that from the digital wallet.
 
-[NOTE]
-=====
-*Supported BlueXP roles:* Organization admin, Folder or project admin
-
-link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles.^]
-=====
-
+.Required BlueXP role:
+Organization admin, or Folder or project admin. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles.^]
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-on-prem-clusters.html[Learn more about managing licenses for on-prem ONTAP clusters from the BlueXP digital wallet^]
