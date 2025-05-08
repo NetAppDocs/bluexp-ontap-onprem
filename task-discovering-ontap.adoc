@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-discovering-ontap.html
-keywords: ontap, cluster, discover, manage, discovering, fas, aff, discover onprem, discover aff cluster, discover cluster, add cluster, active iq, digital wallet
+keywords: ontap, cluster, discover, manage, discovering, fas, aff, discover onprem, discover aff cluster, discover cluster, add cluster, active iq, digital wallet, roles
 summary: Discover on-prem ONTAP clusters from BlueXP so that you can start managing volumes and performing advanced management using ONTAP System Manager, which is available from BlueXP.
 ---
 
