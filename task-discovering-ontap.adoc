@@ -50,7 +50,7 @@ Before you discover your on-prem ONTAP clusters, ensure that you've met the foll
 
 General requirements::
 
-* You'll need to have one of the following BlueXP access roles: *Organization admin*, Folder or project admin, or Storage admin.
+* You'll need to have one of the following BlueXP access roles: Organization admin, Folder or project admin, or Storage admin.
 
 * You need the cluster management IP address and the password for the admin user account.
 
