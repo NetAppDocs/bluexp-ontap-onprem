@@ -17,7 +17,7 @@ If you discovered your on-prem ONTAP cluster directly without using a Connector,
 
 
 .Required BlueXP role:
-Organization admin, Folder or project admin, Storage admin, or System health specialist. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles.^]
+*Organization admin*, *Folder or project admin*, *Storage admin*, or *System health specialist*. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles.^]
 
 
 
