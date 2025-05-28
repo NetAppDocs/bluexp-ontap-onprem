@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-discovering-ontap.html
-keywords: ontap, cluster, discover, manage, discovering, fas, aff, discover onprem, discover aff cluster, discover cluster, add cluster, active iq, digital wallet
+keywords: ontap, cluster, discover, manage, discovering, fas, aff, discover onprem, discover aff cluster, discover cluster, add cluster, active iq, digital wallet, roles
 summary: Discover on-prem ONTAP clusters from BlueXP so that you can start managing volumes and performing advanced management using ONTAP System Manager, which is available from BlueXP.
 ---
 
@@ -15,6 +15,10 @@ summary: Discover on-prem ONTAP clusters from BlueXP so that you can start manag
 [.lead]
 Discover on-premises ONTAP clusters from BlueXP so that you can start managing volumes and performing advanced management using ONTAP System Manager, which is available from BlueXP.
 
+.Required BlueXP role:
+Organization admin, Folder or project admin, Storage admin, or System health specialist. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles.^]
+
+
 == Step 1: Review discovery and management options
 
 BlueXP provides two discovery and management options for on-prem ONTAP clusters:
@@ -22,12 +26,12 @@ BlueXP provides two discovery and management options for on-prem ONTAP clusters:
 Discovery and management using a Connector::
 This option enables you to manage clusters running ONTAP 8.3 and later by using the following features:
 
-* The Standard view, which provides basic volume operations
-* The Advanced view, which provides management through System Manager (supported with ONTAP 9.10.0 and later)
+* Provides basic volume operations natively through the BlueXP interface
+* ONTAP System Manager (supported with ONTAP 9.10.0 and later), access System Manager for each respective cluster directly from BlueXP
 * Integration with BlueXP services that provide data replication, back up and recovery, data classification, and data tiering
 
 +
-This option requires a Connector, which you can install in a cloud provider or on your premises.
+* You must have the Organization admin role to install a Connector. If you don't know if your organization has a Connector, or if you need one created, contact your BlueXP administrator. https://review.docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#contact-your-organization-administrator[Contact your Organization admin.^]
 
 Direct discovery and management::
 This option enables you to manage clusters running ONTAP 9.12.1 and later by using System Manager. No other management options are available. You can't use the Standard view and you can't enable BlueXP services.
@@ -38,7 +42,7 @@ When you access System Manager on an on-premises ONTAP cluster running 9.12.1 or
 
 Once discovered, your clusters are available as a working environment on the BlueXP Canvas.
 
-If you decide to use the other discovery option at a later time, you will need to discover the on-prem cluster as a separate working environment on the Canvas. You then have the option to remove the other working environment.
+If you decide to add a Connector to your BlueXP deployment, you'll need to re-discover your on-prem cluster as a separate working environment on the Canvas. This will enable native BlueXP management and access to BlueXP data services. You then have the option to remove the other working environment.
 
 == Step 2: Set up your environment
 
@@ -46,8 +50,7 @@ Before you discover your on-prem ONTAP clusters, ensure that you've met the foll
 
 General requirements::
 
-* You should have gotten started with BlueXP, which includes logging in and setting up an account.
-https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html[Learn how to get started with BlueXP^]
+* You'll need to have one of the following BlueXP access roles: Organization admin, Folder or project admin, or Storage admin.
 
 * You need the cluster management IP address and the password for the admin user account.
 

@@ -18,7 +18,7 @@ BlueXP can discover the ONTAP clusters running on AFF/FAS controllers and ONTAP 
 == Features
 
 * Manage NFS and CIFS volumes
-* Perform advanced management using ONTAP System Manager
+* Access ONTAP System Manager for any managed cluster through BlueXP 
 * Get health and performance observability with BlueXP analysis and control
 * Use BlueXP services to replicate, back up, scan, classify, and tier data
 * View hardware and software contract status information in the BlueXP digital wallet
@@ -29,6 +29,6 @@ A cost might be associated, but it depends on the following:
 
 * Whether you deploy a Connector to discover and manage your clusters.
 +
-You can install the Connector in the cloud or on your premises.
+You can install the Connector in the cloud or on your premises. Costs are incurred when you install a Connector in the cloud.
 
 * Whether you use BlueXP services such as backup and recovery, tiering, and classification.
