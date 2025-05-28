@@ -13,11 +13,19 @@ summary: If you discovered your on-prem ONTAP cluster directly without using a C
 :imagesdir: ./media/
 
 [.lead]
-If you discovered your on-prem ONTAP cluster directly without using a Connector, you can open the working environment to manage the cluster by using System Manager.
+If you discovered your on-prem ONTAP cluster directly without using a Connector, you can open the working environment to manage the cluster by using ONTAP System Manager.
+
+
+.Required BlueXP role:
+Organization admin, Folder or project admin, Storage admin, or System health specialist. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles.^]
+
+
 
 .Before you begin
 
 The computer that you're using to access the BlueXP console must have a network connection to the on-prem ONTAP cluster, similar to how you would provide connections to other resources in your private network.
+
+
 
 .Limitations
 
@@ -35,7 +43,7 @@ image:screenshot-direct-discovery-we.png[A screenshot of the working environment
 
 . If prompted, enter your ONTAP credentials.
 +
-You're prompted to log in with your ONTAP credentials each time that you open the working environment, if you don't save the credentials. You have the option to save the credentials so that you don't need to enter them each time. If you use this option, the credentials are associated with your BlueXP user only. They aren't saved for use by anyone else in your account.
+You're prompted to log in with your ONTAP credentials each time that you open the working environment, if you don't save the credentials. You have the option to save the credentials so that you don't need to enter them each time. You can manage these credentials on the User Credentials page. In some cases, your BlueXP administrator (Organization admin role) may have disabled this option and require you to enter your credentials each time.
 +
 image:screenshot-credentials.png[A screenshot that shows the prompt to enter the user name and password for an ONTAP cluster.]
 
