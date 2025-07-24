@@ -1,6 +1,5 @@
 settings:
   name: On-premises ONTAP clusters
-  platform: cloud
   internal:
     pdf_enabled: true
   prod:
